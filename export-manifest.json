@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "https://github.com/is2js/pvp",
-  "sourceCommit": "c2fac1d53fc47a99414a9040dc44bc95025e6de9",
+  "sourceCommit": "80d67f3b0f0b97fae8ac6cb4301353df11b2eab7",
   "contentRevision": "intro-authored-sections-20261022-r1",
   "contentSha256": "7f564dbe0e56519926909038d325e35b73478a461d9ac3a827b5140b28396898",
   "mode": "demo",
@@ -21,8 +21,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6290,
-      "sha256": "5e222ed3dd1fef8fcbb1c1c1abff6d6b17c20df5212ca39d61d0e7fff43e9b77",
+      "bytes": 20581,
+      "sha256": "890237907dd071997065735b1659c9ba709b9ed18897d7d33e834c9a8f02bc41",
       "source": "tools/rpg_intro_demo/README.md"
     },
     {
@@ -2276,8 +2276,8 @@
     },
     {
       "path": "docs/data-guide.ko.md",
-      "bytes": 13360,
-      "sha256": "a2d65a46ea81e3a93d78bd3b41945f15aa13702ef92e04f3ece5d881af1dc239",
+      "bytes": 17028,
+      "sha256": "90610f664c352a41d56645f3809adf77c7d6ffd062620a4ab3062db0fe55d59c",
       "source": "docs/rpg-intro-data-guide.ko.md"
     },
     {

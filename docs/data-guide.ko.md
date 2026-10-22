@@ -1,6 +1,46 @@
 # 의맥전기 인트로 데이터 작성 가이드
 
-인트로의 문구·이미지·메뉴는 `data/rpg-intro/`에서 작성합니다. 게임 모션·스킬은 기존 게임 카탈로그에서 선별한 값으로 합칩니다. 완성된 `assets/rpg/ui/intro/v1/content.json`은 생성 결과이므로 직접 편집하지 않습니다.
+이 문서는 **독립 데모 사용자**와 **PVP 원본 유지보수자**의 입력 위치를 구분합니다. 독립 사용자는 데모 README의 실행·교체 예제부터 시작하세요.
+
+## 독립 데모: PVP 없이 수정하기
+
+| 목적 | 데모 저장소에서 편집할 곳 |
+| --- | --- |
+| 브랜드·메타·메뉴·CTA 안내 | `data/content.json`의 `site`, `brand` |
+| 섹션 제목·설명·배경 | `sections.<id>.heading/background/copy/assets` |
+| 세계관·게임 특징·동료·갤러리 | 상위 `universe`, `features`, `guild`, `gallery` 배열 |
+| 가이드 | `guide.protagonist`, `guide.stories` |
+| 인물·몬스터·모션·스킬 | `actors`, `monsters`, `heroMonsters`, `characterScene`, `medical`, `elements` |
+| 실제 파일 | `assets/` 아래, URL은 `/assets/...` |
+| 자산 무결성·변경 이력 | `export-manifest.json` |
+
+독립 빌드는 **`data/content.json`만 읽습니다.** `data/authored/`는 원본의 작성 파일 스냅샷이며 자동 합성하지 않습니다. `sections.*.items`와 상위 배열, `site.navigation[].entries`, 갤러리에 이미 복사된 이름·이미지를 함께 맞춰야 합니다. 카드의 `name/title`, `tag/eyebrow`도 함께 바꿉니다. `contentRef`는 PVP 원본에서 합성할 때의 참조이며 독립 빌드가 다시 해결하지 않습니다.
+
+현재 11개 섹션 ID·9개 메뉴·기존 항목 수는 고정 계약입니다. 문구·자산 교체는 데이터로 가능하지만 섹션 추가·삭제·순서 변경은 템플릿/스키마/코드도 수정해야 합니다. 모바일 크롭은 대부분 CSS가 정하므로 임의의 JSON 필드를 추가해도 동작하지 않습니다.
+
+문구만 바꾸는 예:
+
+```python
+data["sections"]["features"]["heading"]["title"] = "우리만의 모험"
+data["sections"]["features"]["background"] = "/assets/custom/courtyard.webp"
+```
+
+배경 파일을 실제로 넣고 README의 `register_changes.py` 예제로 **해당 파일만** manifest에 등록합니다. `data/content.json`은 파일 목록 해시 대상이 아니지만 `contentRevision/contentSha256`도 갱신하면 기록이 맞습니다. 기존 이미지·CSS·README·템플릿은 파일 해시 대상입니다. 원본의 `sourceCommit/sourceSha256`는 수출 당시 이력으로 보존하고, 자신의 변경 결과 해시와 출처를 별도로 기록합니다. 전체 파일 해시를 무조건 재승인하지 않습니다.
+
+```powershell
+.venv/Scripts/python.exe tools/build.py --check
+.venv/Scripts/python.exe tools/build.py --base-path /uimaek-intro-demo/
+.venv/Scripts/python.exe tools/verify.py --base-path /uimaek-intro-demo/
+.venv/Scripts/python.exe tools/preview.py --port 8080 --base-path /uimaek-intro-demo/
+```
+
+의술 수행자 슬롯·프레임/발 기준점·장비 시간은 함께 유지합니다. 원소 영상의 스킬 구간 길이는 `max(castDurationMs, effectStartMs + effectDurationMs) + 1100ms`이며 앞 스킬의 길이를 더해 시작점을 정합니다. 현재 별도의 `start/end` JSON 필드는 읽지 않으므로 교체 영상도 같은 순서와 시간으로 제작합니다. 새로운 한글은 subset 서체에 없을 수 있어 UI/시스템 폰트로 대체됩니다. 전체 브랜드 변경은 로고·부제 이미지와 템플릿의 일부 고정 안내도 확인합니다.
+
+독립 사용자 수정본은 별도 커밋/브랜치로 보관합니다. PVP exporter를 재실행하면 생성 JSON·공유 코드·문서를 덮어쓰므로 원본 갱신과 병합 절차를 분리합니다. 아래 내용은 **PVP 원본에서 작성·합성·재내보내는 경우**의 기준입니다.
+
+## PVP 원본: 작성 데이터
+
+원본의 문구·이미지·메뉴는 `data/rpg-intro/`에서 작성합니다. 게임 모션·스킬은 기존 게임 카탈로그에서 선별한 값으로 합칩니다. 원본의 `assets/rpg/ui/intro/v1/content.json`은 생성 결과이므로 직접 편집하지 않습니다.
 
 ## 파일과 데이터 흐름
 
