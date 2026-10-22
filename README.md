@@ -2,9 +2,9 @@
 
 의료진의 치유와 모험을 소개하는 정적 웹사이트입니다. PVP 원본의 Jinja 템플릿·CSS·native ES module을 사용하며 게임 서버, 로그인, 데이터베이스 없이 실행합니다.
 
-**현재 비공개 검토 단계입니다. GitHub Pages는 배포하지 않았습니다.** 이 저장소에는 배포 workflow가 없습니다.
+**공개 데모: https://is2js.github.io/uimaek-intro-demo/** · 저장소는 공개이며 main push 시 검증 후 Pages에 자동 배포합니다.
 
-이 README의 독립 수정 절차는 **PVP 원본 저장소가 없는 사용자**를 위한 것입니다. 접근 권한을 받아 이 저장소를 clone하거나 ZIP으로 내려받으면 문구·이미지·기존 항목의 데이터를 교체할 수 있습니다. 코드·원화의 제3자 재배포 허용 여부는 소유자에게 확인해야 하며, 이 가이드가 자산 사용권을 부여하지는 않습니다.
+이 README의 독립 수정 절차는 **PVP 원본 저장소가 없는 사용자**를 위한 것입니다. 저장소를 clone하거나 ZIP으로 내려받으면 문구·이미지·기존 항목의 데이터를 교체할 수 있습니다. 코드·원화의 제3자 재배포 허용 여부는 소유자에게 확인해야 하며, 이 가이드가 자산 사용권을 부여하지는 않습니다.
 
 ## 다른 프로젝트로 재사용하는 순서
 
@@ -247,4 +247,8 @@ PVP 체크아웃에서:
 
 비공개 저장소에서도 공개 Pages를 만들 수 있습니다. 개인은 GitHub Pro, 조직은 Team·Enterprise 등 비공개 저장소의 Pages를 지원하는 요금제가 필요하며 Free에서는 공개 저장소가 필요합니다. 저장소와 사이트의 공개 범위는 별개입니다. 공개 사이트에 포함된 이미지·JSON·JS는 방문자가 내려받을 수 있습니다. [지원 요금제](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), [비공개 저장소의 공개 사이트 안내](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
 
-Pages 설정, `gh-pages` 브랜치, 배포 workflow, 커스텀 도메인은 만들지 않습니다. 후속 공개 요청이 있을 때 저장소 공개 범위와 출처를 검토하고 배포 설정을 별도로 적용합니다. 이번 코드 업로드는 사이트 공개를 실행하지 않습니다.
+이 데모의 Pages 주소는 **https://is2js.github.io/uimaek-intro-demo/** 입니다. Pages를 선택한 저장소에서는 `.github/workflows/pages.yml`이 main push 또는 수동 실행 시 데이터·해시 검사→정적 빌드→경로 검사→`dist/` 업로드→배포를 수행합니다. [배포 실행 기록](https://github.com/is2js/uimaek-intro-demo/actions/workflows/pages.yml)에서 성공 여부를 확인합니다. API·DB·인증은 배포하지 않습니다. `gh-pages` 브랜치와 커스텀 도메인은 사용하지 않습니다.
+
+PVP 원본에서 처음 배포용으로 내보낼 때는 `tools/export_rpg_intro_demo.py --output ../uimaek-intro-demo --pages`를 사용합니다. 선택은 `.intro-export.json`의 `pagesEnabled`에 저장되며 이후 일반 내보내기에서도 workflow와 README 상태를 유지합니다. 새 대상에 일반 내보내기만 실행하면 배포 workflow를 만들지 않습니다. 내보내기 자체가 GitHub 설정을 바꾸거나 push하지는 않습니다.
+
+공개 저장소의 Settings → Pages에서 Source를 **GitHub Actions**로 설정한 경우에 배포됩니다. 새로 복사한 프로젝트는 저장소 설정과 workflow를 확인한 뒤 배포하세요. main에 push하면 현재 공개 사이트가 갱신되므로 작업 브랜치에서 먼저 로컬 검증하고 병합합니다. 실패 시 사이트는 이전 정상 배포를 유지하며, 이전 정상 커밋을 새 커밋으로 복원해 다시 배포할 수 있습니다. API 키나 비공개 데이터를 JSON·자산에 넣지 않습니다.
