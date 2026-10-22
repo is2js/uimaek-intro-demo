@@ -1,0 +1,5923 @@
+{
+  "schemaVersion": 5,
+  "revision": "intro-authored-sections-20261022-r1",
+  "startHref": "/play",
+  "brand": {
+    "name": "의맥전기",
+    "subtitle": "치유의 손끝에서, 새로운 모험이 시작된다",
+    "logo": "/assets/rpg/ui/intro/v1/logo-calligraphy-white.webp",
+    "subtitleImage": "/assets/rpg/ui/branding/uimaek-jeongi-action-hybrid-subtitle-white.png",
+    "primary": "의맥",
+    "secondary": "전기",
+    "hanja": "醫脈傳奇",
+    "serviceLabel": "PVP RPG"
+  },
+  "universe": [
+    {
+      "id": "first-step",
+      "name": "함께 떠나는 첫걸음",
+      "description": "진료를 마친 두 의료진, 낯선 마을에서 다음 모험을 약속합니다.",
+      "image": "/assets/rpg/ui/intro/v1/world-captures/v2/play-namhae3-r35f-300-400.webp",
+      "tag": "PLAY",
+      "originalImage": "/assets/rpg/ui/intro/v1/world-captures/v2/play-namhae3-r35f-300-400-source.png",
+      "caption": "실제 새남해3 R35f · 300·400 의료진의 예시 대화",
+      "alt": "새남해3 남해읍에서 300·400 의료진이 두 말풍선으로 대화하는 실제 의맥전기 플레이 화면",
+      "gameplayCapture": true,
+      "title": "함께 떠나는 첫걸음",
+      "eyebrow": "PLAY"
+    },
+    {
+      "id": "spring",
+      "name": "봄을 걷다",
+      "description": "이동면의 푸른 풍경에서 새로운 길을 발견하세요.",
+      "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/idong-spring-concept.webp",
+      "tag": "SPRING",
+      "title": "봄을 걷다",
+      "eyebrow": "SPRING"
+    },
+    {
+      "id": "summer",
+      "name": "여름의 바다",
+      "description": "미조의 해안과 마을을 지나 다음 모험으로.",
+      "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/mijo-summer-concept.webp",
+      "tag": "SUMMER",
+      "title": "여름의 바다",
+      "eyebrow": "SUMMER"
+    },
+    {
+      "id": "autumn",
+      "name": "가을의 여정",
+      "description": "남면의 풍경 속에서 이어지는 모험의 발걸음.",
+      "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/nam-autumn-concept.webp",
+      "tag": "AUTUMN",
+      "title": "가을의 여정",
+      "eyebrow": "AUTUMN"
+    },
+    {
+      "id": "winter",
+      "name": "겨울의 숨결",
+      "description": "설천의 겨울 풍경 너머 새로운 도전을 만나세요.",
+      "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/seolcheon-winter-concept.webp",
+      "tag": "WINTER",
+      "title": "겨울의 숨결",
+      "eyebrow": "WINTER"
+    }
+  ],
+  "actors": [
+    {
+      "name": "남성 의료진",
+      "title": "남성 의료진",
+      "eyebrow": "의료진",
+      "tag": "의료진",
+      "description": "치유와 모험의 길을 함께 걷는 의맥전기의 의료진.",
+      "image": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+      "id": "medical-male",
+      "role": "의료진",
+      "portrait": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+      "displayMode": "portrait",
+      "spriteImage": "/assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/idle/normal/s_00.png",
+      "sprite": {
+        "src": "/assets/intro-sprites/a7100b6de3106967af9751bb-256-r4.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 300,
+        "displayWidth": 180,
+        "durationMs": 900,
+        "direction": "s",
+        "originX": 128,
+        "originY": 239,
+        "motion": "idle",
+        "action": "normal",
+        "logicalBody": "100",
+        "visualBody": "300",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      },
+      "scene": {
+        "x": 29.5,
+        "y": 75,
+        "width": 7.5,
+        "depth": 75,
+        "originXPercent": 50,
+        "originYPercent": 93.359375
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/c8a0a4468e14755cbd5e08ab-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 300,
+            "displayWidth": 180,
+            "durationMs": 900,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "idle",
+            "action": "normal",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": true
+          },
+          "tools": [
+            {
+              "sprite": {
+                "src": "/assets/intro-sprites/fddd568b5126d02c5a540147-256-r4.png",
+                "frameWidth": 256,
+                "frameHeight": 256,
+                "frames": 3,
+                "rows": 1,
+                "row": 0,
+                "frameMs": 300,
+                "displayWidth": 180,
+                "durationMs": 900,
+                "direction": "s",
+                "originX": 128,
+                "originY": 239,
+                "motion": "idle",
+                "action": "identity-idle-walk-20260909-r1-100-idle-throw",
+                "logicalBody": "100",
+                "visualBody": "300",
+                "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+                "loop": true,
+                "toolId": "throw",
+                "selectedSheet": "sheets/weapon-visibility-20260914-r1/base/12-100-idle-normal-throw.png",
+                "clock": "body",
+                "sourceDurationMs": 900
+              },
+              "placements": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                }
+              ]
+            }
+          ]
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/8280b603c90bb36d550360d2-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 9,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 35.55555555555556,
+            "displayWidth": 180,
+            "durationMs": 320,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "attack",
+            "action": "sword",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": false
+          },
+          "tools": [
+            {
+              "sprite": {
+                "src": "/assets/intro-sprites/2f7b9800034049bb1a911121-256-r4.png",
+                "frameWidth": 256,
+                "frameHeight": 256,
+                "frames": 9,
+                "rows": 1,
+                "row": 0,
+                "frameMs": 35.55555555555556,
+                "displayWidth": 180,
+                "durationMs": 320,
+                "direction": "s",
+                "originX": 128,
+                "originY": 239,
+                "motion": "attack",
+                "action": "identity-combat-care-20260912-r1-100-throw",
+                "logicalBody": "100",
+                "visualBody": "300",
+                "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+                "loop": false,
+                "toolId": "throw",
+                "selectedSheet": "sheets/weapon-visibility-20260914-r1/base/06-100-attack-sword-throw.png",
+                "clock": "body",
+                "sourceDurationMs": 720
+              },
+              "placements": [
+                {
+                  "x": 0,
+                  "y": -3,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": -14,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "여성 의료진",
+      "title": "여성 의료진",
+      "eyebrow": "의료진",
+      "tag": "의료진",
+      "description": "환자를 돌보는 손길로 새로운 세계를 탐험합니다.",
+      "image": "/assets/rpg/ui/intro/v1/portrait-medical-female.webp",
+      "id": "medical-female",
+      "role": "의료진",
+      "portrait": "/assets/rpg/ui/intro/v1/portrait-medical-female.webp",
+      "displayMode": "portrait",
+      "spriteImage": "/assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/400/idle/normal/s_00.png",
+      "sprite": {
+        "src": "/assets/intro-sprites/b706c75b732e58b86154bedf-256-r4.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 300,
+        "displayWidth": 180,
+        "durationMs": 900,
+        "direction": "s",
+        "originX": 128,
+        "originY": 239,
+        "motion": "idle",
+        "action": "normal",
+        "logicalBody": "200",
+        "visualBody": "400",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      },
+      "scene": {
+        "x": 58.3,
+        "y": 64.5,
+        "width": 7.2,
+        "depth": 65,
+        "originXPercent": 50,
+        "originYPercent": 93.359375
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/60c3e1ee747410741e191e91-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 300,
+            "displayWidth": 180,
+            "durationMs": 900,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "idle",
+            "action": "normal",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": true
+          },
+          "tools": [
+            {
+              "sprite": {
+                "src": "/assets/intro-sprites/79d46bf08722ea20fa56874e-256-r4.png",
+                "frameWidth": 256,
+                "frameHeight": 256,
+                "frames": 3,
+                "rows": 1,
+                "row": 0,
+                "frameMs": 300,
+                "displayWidth": 180,
+                "durationMs": 900,
+                "direction": "s",
+                "originX": 128,
+                "originY": 239,
+                "motion": "idle",
+                "action": "identity-idle-walk-20260909-r1-200-idle-attack-axe",
+                "logicalBody": "200",
+                "visualBody": "400",
+                "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+                "loop": true,
+                "toolId": "attack-axe",
+                "selectedSheet": "sheets/weapon-direction-20260919-r5/base/200-idle-normal-attack-axe.png",
+                "clock": "body",
+                "sourceDurationMs": 900
+              },
+              "placements": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                }
+              ]
+            }
+          ]
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/34f29d70e43ce7948bf29945-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 8,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 40,
+            "displayWidth": 180,
+            "durationMs": 320,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "attack",
+            "action": "attack-axe",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": false
+          },
+          "tools": [
+            {
+              "sprite": {
+                "src": "/assets/intro-sprites/76b0db7f4c14e9817e7a334b-256-r4.png",
+                "frameWidth": 256,
+                "frameHeight": 256,
+                "frames": 8,
+                "rows": 1,
+                "row": 0,
+                "frameMs": 40,
+                "displayWidth": 180,
+                "durationMs": 320,
+                "direction": "s",
+                "originX": 128,
+                "originY": 239,
+                "motion": "attack",
+                "action": "identity-combat-care-20260912-r1-200-attack-axe",
+                "logicalBody": "200",
+                "visualBody": "400",
+                "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+                "loop": false,
+                "toolId": "attack-axe",
+                "selectedSheet": "sheets/weapon-direction-20260919-r5/base/200-attack-attack-axe-attack-axe.png",
+                "clock": "body",
+                "sourceDurationMs": 720
+              },
+              "placements": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": -14,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": -10,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "아놀드",
+      "title": "아놀드",
+      "eyebrow": "모험의 길잡이",
+      "tag": "모험의 길잡이",
+      "description": "새로운 여행자의 첫걸음을 함께하는 아놀드.",
+      "image": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r3-face-dynamic/portraits/portrait-n001.png?v=285736bd1764",
+      "id": "portrait-n001",
+      "role": "모험의 길잡이",
+      "portrait": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r3-face-dynamic/portraits/portrait-n001.png?v=285736bd1764",
+      "scene": {
+        "x": 35.8,
+        "y": 94.5,
+        "width": 4.57666,
+        "depth": 95,
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n001.webp",
+        "originXPercent": 35.92233009708738,
+        "originYPercent": 97.97553875
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n001/idle.webp",
+            "frameWidth": 206,
+            "frameHeight": 320,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 206,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 74.0,
+            "originY": 313.521724,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true,
+            "staticFrame": 0
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n001/idle.webp",
+            "frameWidth": 206,
+            "frameHeight": 320,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 206,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 74.0,
+            "originY": 313.521724,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "간호사",
+      "title": "간호사",
+      "eyebrow": "치료와 회복",
+      "tag": "치료와 회복",
+      "description": "마을의 진료실에서 모험가를 맞이하는 간호사.",
+      "image": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n002.png?v=11110eb1f1da",
+      "id": "portrait-n002",
+      "role": "치료와 회복",
+      "portrait": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n002.png?v=11110eb1f1da",
+      "scene": {
+        "x": 69.4,
+        "y": 53.5,
+        "width": 2.701149,
+        "depth": 54,
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n002.webp",
+        "originXPercent": 57.446808510638306,
+        "originYPercent": 98.59173710691825
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n002/idle.webp",
+            "frameWidth": 141,
+            "frameHeight": 318,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 141,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 81.0,
+            "originY": 313.521724,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true,
+            "staticFrame": 0
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n002/idle.webp",
+            "frameWidth": 141,
+            "frameHeight": 318,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 141,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 81.0,
+            "originY": 313.521724,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "잡상인",
+      "title": "잡상인",
+      "eyebrow": "마을의 상인",
+      "tag": "마을의 상인",
+      "description": "다음 모험에 필요한 물품을 준비하는 잡상인.",
+      "image": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n006.png?v=46846f50ff39",
+      "id": "portrait-n006",
+      "role": "마을의 상인",
+      "portrait": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n006.png?v=46846f50ff39",
+      "scene": {
+        "x": 20.5,
+        "y": 59.5,
+        "width": 4.169383,
+        "depth": 60,
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n006.webp",
+        "originXPercent": 49.411764705882355,
+        "originYPercent": 92.64521472081219
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n006/idle.webp",
+            "frameWidth": 170,
+            "frameHeight": 197,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 170,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 84.0,
+            "originY": 182.511073,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true,
+            "staticFrame": 0
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n006/idle.webp",
+            "frameWidth": 170,
+            "frameHeight": 197,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 170,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 84.0,
+            "originY": 182.511073,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "대장장이",
+      "title": "대장장이",
+      "eyebrow": "장비와 제작",
+      "tag": "장비와 제작",
+      "description": "모험의 든든한 준비를 돕는 대장장이.",
+      "image": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n007.png?v=88081fcb202f",
+      "id": "portrait-n007",
+      "role": "장비와 제작",
+      "portrait": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n007.png?v=88081fcb202f",
+      "scene": {
+        "x": 11.8,
+        "y": 71,
+        "width": 3.679035,
+        "depth": 71,
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n007.webp",
+        "originXPercent": 52.972972972972975,
+        "originYPercent": 97.05643788819876
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n007/idle.webp",
+            "frameWidth": 185,
+            "frameHeight": 322,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 185,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 98.0,
+            "originY": 312.52173,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true,
+            "staticFrame": 0
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n007/idle.webp",
+            "frameWidth": 185,
+            "frameHeight": 322,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 185,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 98.0,
+            "originY": 312.52173,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "길드마스터",
+      "title": "길드마스터",
+      "eyebrow": "길드의 안내자",
+      "tag": "길드의 안내자",
+      "description": "동료와 함께할 길을 안내하는 길드마스터.",
+      "image": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n017.png?v=abfad9234422",
+      "id": "portrait-n017",
+      "role": "길드의 안내자",
+      "portrait": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n017.png?v=abfad9234422",
+      "scene": {
+        "x": 44.2,
+        "y": 35.8,
+        "width": 1.770043,
+        "depth": 36,
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n017.webp",
+        "originXPercent": 46.32352941176471,
+        "originYPercent": 98.00053950617284
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n017/idle.webp",
+            "frameWidth": 136,
+            "frameHeight": 324,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 136,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 63.0,
+            "originY": 317.521748,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true,
+            "staticFrame": 0
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n017/idle.webp",
+            "frameWidth": 136,
+            "frameHeight": 324,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 136,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 63.0,
+            "originY": 317.521748,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "건물관리인",
+      "title": "건물관리인",
+      "eyebrow": "마을의 관리자",
+      "tag": "마을의 관리자",
+      "description": "모험가와 마을을 이어주는 건물관리인.",
+      "image": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n020.png?v=9d8c07a9472c",
+      "id": "portrait-n020",
+      "role": "마을의 관리자",
+      "portrait": "/assets/rpg/actors/npc-gpt61-sol2-ultra-r2-portraits/portraits/portrait-n020.png?v=9d8c07a9472c",
+      "scene": {
+        "x": 83.3,
+        "y": 73.2,
+        "width": 1.992337,
+        "depth": 73,
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n020.webp",
+        "originXPercent": 50.83333333333333,
+        "originYPercent": 98.61781327160493
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n020/idle.webp",
+            "frameWidth": 120,
+            "frameHeight": 324,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 120,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 61.0,
+            "originY": 319.521715,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true,
+            "staticFrame": 0
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n020/idle.webp",
+            "frameWidth": 120,
+            "frameHeight": 324,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 120,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 61.0,
+            "originY": 319.521715,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true
+          },
+          "tools": []
+        }
+      }
+    }
+  ],
+  "monsters": [
+    {
+      "name": "금고갑주 피그미왕",
+      "title": "금고갑주 피그미왕",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "남해읍의 ‘성문 시장 도시’ 구상을 바탕으로 한 금고갑주 피그미왕. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M906.webp",
+      "id": "M906",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M906.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M906-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "namhae-eup",
+      "regionName": "남해읍",
+      "theme": "성문 시장 도시",
+      "speciesName": "금고갑주 피그미왕",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/ebbd74861da837cf3062929a-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 1,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/8e84c7499b616795279704cd-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "수문 붕대감시왕",
+      "title": "수문 붕대감시왕",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "이동면의 ‘운하 약초 정원’ 구상을 바탕으로 한 수문 붕대감시왕. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M911.webp",
+      "id": "M911",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M911.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M911-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "idong-myeon",
+      "regionName": "이동면",
+      "theme": "운하 약초 정원",
+      "speciesName": "수문 붕대감시왕",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/cfa79625386667bb194ed9ab-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 1,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/973baba0a750b9659566185b-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "황금볏단 더미왕",
+      "title": "황금볏단 더미왕",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "남면의 ‘황금 다랑논’ 구상을 바탕으로 한 황금볏단 더미왕. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M916.webp",
+      "id": "M916",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M916.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M916-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "nam-myeon",
+      "regionName": "남면",
+      "theme": "황금 다랑논",
+      "speciesName": "황금볏단 더미왕",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/c3eeb8c74d9cccbaef460edc-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 1,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/c16278ea9560838ca4954699-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "난파머미 선장",
+      "title": "난파머미 선장",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "미조면의 ‘항구·선박 수리장’ 구상을 바탕으로 한 난파머미 선장. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M921.webp",
+      "id": "M921",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M921.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M921-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "mijo-myeon",
+      "regionName": "미조면",
+      "theme": "항구·선박 수리장",
+      "speciesName": "난파머미 선장",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/eeef7ae1c3de118d41d63135-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 1,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/b3681183b074f9c1aebfd8a0-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "백암 수호골렘",
+      "title": "백암 수호골렘",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "상주면의 ‘백색 해안 절벽’ 구상을 바탕으로 한 백암 수호골렘. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M926.webp",
+      "id": "M926",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M926.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M926-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "sangju-myeon",
+      "regionName": "상주면",
+      "theme": "백색 해안 절벽",
+      "speciesName": "백암 수호골렘",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/0410eb66c55e2db128a84924-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 1,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/4a476a2f446706d75a55ca0c-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "판근 헐크족장",
+      "title": "판근 헐크족장",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "삼동면의 ‘거대 수관 정글’ 구상을 바탕으로 한 판근 헐크족장. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M931.webp",
+      "id": "M931",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M931.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M931-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "samdong-myeon",
+      "regionName": "삼동면",
+      "theme": "거대 수관 정글",
+      "speciesName": "판근 헐크족장",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/d1ceb2bea7d30dcbc2340e88-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 2,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/e66f1af443d10ecfde2f9bb9-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "고원 바람악마",
+      "title": "고원 바람악마",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "창선면의 ‘강풍 고원 장터’ 구상을 바탕으로 한 고원 바람악마. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M936.webp",
+      "id": "M936",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M936.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M936-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "changseon-myeon",
+      "regionName": "창선면",
+      "theme": "강풍 고원 장터",
+      "speciesName": "고원 바람악마",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/84d37584c8a74c01146880f3-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 2,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/388e347bbe6bd61347d462fe-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "광맥 아이언골렘",
+      "title": "광맥 아이언골렘",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "고현면의 ‘설경 광물 온천’ 구상을 바탕으로 한 광맥 아이언골렘. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M941.webp",
+      "id": "M941",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M941.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M941-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "gohyeon-myeon",
+      "regionName": "고현면",
+      "theme": "설경 광물 온천",
+      "speciesName": "광맥 아이언골렘",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/5bde4f25bb839b08a132e009-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 1,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/855f59fe11eafaa7c0984e35-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "성소빙각 악마",
+      "title": "성소빙각 악마",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "설천면의 ‘빙벽 성소’ 구상을 바탕으로 한 성소빙각 악마. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M946.webp",
+      "id": "M946",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M946.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M946-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "seolcheon-myeon",
+      "regionName": "설천면",
+      "theme": "빙벽 성소",
+      "speciesName": "성소빙각 악마",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/43824c27b8ba841442103475-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 2,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/30d0ba32cc7a062c4c716721-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    },
+    {
+      "name": "용광로 고룡",
+      "title": "용광로 고룡",
+      "eyebrow": "지역 콘셉트 아종",
+      "tag": "지역 콘셉트 아종",
+      "description": "서면의 ‘활화산 용암 공방’ 구상을 바탕으로 한 용광로 고룡. 보스 아종 콘셉트입니다.",
+      "image": "/assets/rpg/ui/intro/v1/monster-portraits/M951.webp",
+      "id": "M951",
+      "role": "지역 콘셉트 아종",
+      "portrait": "/assets/rpg/ui/intro/v1/monster-portraits/M951.webp",
+      "thumbnail": "/assets/rpg/ui/intro/v1/monster-portraits/M951-thumb.webp",
+      "displayMode": "portrait",
+      "regionId": "seo-myeon",
+      "regionName": "서면",
+      "theme": "활화산 용암 공방",
+      "speciesName": "용광로 고룡",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/ed960f75709dddcae4f74713-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 2,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/2f71e95fe89959ba99d43741-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    }
+  ],
+  "heroMonsters": [
+    {
+      "name": "고원 유목피그미",
+      "title": "고원 유목피그미",
+      "eyebrow": "몬스터",
+      "tag": "몬스터",
+      "description": "바람이 부는 고원에서 만나는 작은 유목 피그미의 아종 콘셉트.",
+      "image": "/assets/rpg/monsters/sprites/M932/walk/normal/s_00.png",
+      "id": "M932",
+      "role": "몬스터",
+      "portrait": "/assets/rpg/monsters/sprites/M932/walk/normal/s_00.png",
+      "sprite": {
+        "src": "/assets/intro-sprites/bb7704147b3d4a35bb1615b1-128-r4.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 150,
+        "displayWidth": 180,
+        "durationMs": 450,
+        "direction": "s",
+        "originX": 64,
+        "originY": 112,
+        "motion": "walk",
+        "action": "normal"
+      },
+      "sourceMonsterId": "M004-R4",
+      "revision": "pose-polish-r2-lk-3d-render-71cb7655af7f-b7739d4d6710",
+      "regionName": "창선면",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "introOnly": true,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/bb7704147b3d4a35bb1615b1-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 1,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/2c249abd5601128da0ea6825-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      },
+      "heroSequence": {
+        "direction": "se",
+        "loop": true,
+        "staticFrame": 1,
+        "steps": [
+          {
+            "sprite": {
+              "src": "/assets/intro-sprites/bb7704147b3d4a35bb1615b1-128-r3.png",
+              "frameWidth": 128,
+              "frameHeight": 128,
+              "frames": 3,
+              "rows": 1,
+              "row": 0,
+              "frameMs": 150,
+              "displayWidth": 180,
+              "durationMs": 450,
+              "direction": "se",
+              "originX": 64,
+              "originY": 112,
+              "motion": "walk",
+              "action": "normal",
+              "staticFrame": 1,
+              "loop": false
+            },
+            "tools": [],
+            "id": "walk"
+          },
+          {
+            "sprite": {
+              "src": "/assets/intro-sprites/2c249abd5601128da0ea6825-128-r3.png",
+              "frameWidth": 128,
+              "frameHeight": 128,
+              "frames": 3,
+              "rows": 1,
+              "row": 0,
+              "frameMs": 150,
+              "displayWidth": 180,
+              "durationMs": 450,
+              "direction": "se",
+              "originX": 64,
+              "originY": 112,
+              "motion": "attack",
+              "action": "normal",
+              "loop": false
+            },
+            "tools": [],
+            "id": "attack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "백암 수호골렘",
+      "title": "백암 수호골렘",
+      "eyebrow": "몬스터",
+      "tag": "몬스터",
+      "description": "백색 해안의 돌을 닮은 둥근 수호골렘의 아종 콘셉트.",
+      "image": "/assets/rpg/monsters/sprites/M926/walk/normal/s_00.png",
+      "id": "M926",
+      "role": "몬스터",
+      "portrait": "/assets/rpg/monsters/sprites/M926/walk/normal/s_00.png",
+      "sprite": {
+        "src": "/assets/intro-sprites/0410eb66c55e2db128a84924-128-r4.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 150,
+        "displayWidth": 180,
+        "durationMs": 450,
+        "direction": "s",
+        "originX": 64,
+        "originY": 112,
+        "motion": "walk",
+        "action": "normal"
+      },
+      "sourceMonsterId": "M031-R4",
+      "revision": "pose-polish-r2-lk-3d-render-00b0217552a8-2377628471ba",
+      "regionName": "상주면",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "introOnly": true,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/0410eb66c55e2db128a84924-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 1,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/4a476a2f446706d75a55ca0c-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 450,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      },
+      "heroSequence": {
+        "direction": "sw",
+        "loop": true,
+        "staticFrame": 1,
+        "steps": [
+          {
+            "sprite": {
+              "src": "/assets/intro-sprites/0410eb66c55e2db128a84924-128-r5.png",
+              "frameWidth": 128,
+              "frameHeight": 128,
+              "frames": 3,
+              "rows": 1,
+              "row": 0,
+              "frameMs": 150,
+              "displayWidth": 180,
+              "durationMs": 450,
+              "direction": "sw",
+              "originX": 64,
+              "originY": 112,
+              "motion": "walk",
+              "action": "normal",
+              "staticFrame": 1,
+              "loop": false
+            },
+            "tools": [],
+            "id": "walk"
+          },
+          {
+            "sprite": {
+              "src": "/assets/intro-sprites/4a476a2f446706d75a55ca0c-128-r5.png",
+              "frameWidth": 128,
+              "frameHeight": 128,
+              "frames": 3,
+              "rows": 1,
+              "row": 0,
+              "frameMs": 150,
+              "displayWidth": 180,
+              "durationMs": 450,
+              "direction": "sw",
+              "originX": 64,
+              "originY": 112,
+              "motion": "attack",
+              "action": "normal",
+              "loop": false
+            },
+            "tools": [],
+            "id": "attack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "고원 바람악마",
+      "title": "고원 바람악마",
+      "eyebrow": "몬스터",
+      "tag": "몬스터",
+      "description": "맑은 바람을 두른 고원 정령의 아종 콘셉트.",
+      "image": "/assets/rpg/monsters/sprites/M936/walk/normal/s_00.png",
+      "id": "M936",
+      "role": "몬스터",
+      "portrait": "/assets/rpg/monsters/sprites/M936/walk/normal/s_00.png",
+      "sprite": {
+        "src": "/assets/intro-sprites/84d37584c8a74c01146880f3-128-r4.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frames": 5,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 150,
+        "displayWidth": 180,
+        "durationMs": 750,
+        "direction": "s",
+        "originX": 64,
+        "originY": 112,
+        "motion": "walk",
+        "action": "normal"
+      },
+      "sourceMonsterId": "M226-R4",
+      "revision": "pose-polish-r2-lk-3d-render-470ba5274569-1310e0421a76",
+      "regionName": "창선면",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "introOnly": true,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/84d37584c8a74c01146880f3-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 2,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/388e347bbe6bd61347d462fe-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      },
+      "heroSequence": {
+        "direction": "s",
+        "loop": true,
+        "staticFrame": 2,
+        "steps": [
+          {
+            "sprite": {
+              "src": "/assets/intro-sprites/84d37584c8a74c01146880f3-128-r4.png",
+              "frameWidth": 128,
+              "frameHeight": 128,
+              "frames": 5,
+              "rows": 1,
+              "row": 0,
+              "frameMs": 150,
+              "displayWidth": 180,
+              "durationMs": 750,
+              "direction": "s",
+              "originX": 64,
+              "originY": 112,
+              "motion": "walk",
+              "action": "normal",
+              "staticFrame": 2,
+              "loop": false
+            },
+            "tools": [],
+            "id": "walk"
+          },
+          {
+            "sprite": {
+              "src": "/assets/intro-sprites/388e347bbe6bd61347d462fe-128-r4.png",
+              "frameWidth": 128,
+              "frameHeight": 128,
+              "frames": 5,
+              "rows": 1,
+              "row": 0,
+              "frameMs": 150,
+              "displayWidth": 180,
+              "durationMs": 750,
+              "direction": "s",
+              "originX": 64,
+              "originY": 112,
+              "motion": "attack",
+              "action": "normal",
+              "loop": false
+            },
+            "tools": [],
+            "id": "attack"
+          }
+        ]
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "battle",
+      "name": "전투의 순간",
+      "description": "나만의 장비와 스킬로 펼치는 실시간 전투.",
+      "image": "/assets/rpg/ui/generated-previews/16-battle-clinic-action-center-20260628.webp",
+      "tag": "BATTLE",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+        "kind": "portrait",
+        "side": "right"
+      },
+      "actionId": "play",
+      "title": "전투의 순간",
+      "eyebrow": "BATTLE",
+      "href": "/play",
+      "label": "게임 시작"
+    },
+    {
+      "id": "healing",
+      "name": "치유와 성장",
+      "description": "의료 스킬과 회복의 흐름을 연결하는 모험.",
+      "image": "/assets/rpg/ui/entry-bg-healing-buff-left-20260628.webp",
+      "tag": "HEALING",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/portrait-medical-female.webp",
+        "kind": "portrait",
+        "side": "right"
+      },
+      "actionId": "play",
+      "title": "치유와 성장",
+      "eyebrow": "HEALING",
+      "href": "/play",
+      "label": "게임 시작"
+    },
+    {
+      "id": "equipment",
+      "name": "준비하는 즐거움",
+      "description": "장비와 인벤토리를 정비하고 다음 전투를 준비하세요.",
+      "image": "/assets/rpg/ui/entry-bg-inventory-prep-left-20260628.webp",
+      "tag": "EQUIPMENT",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n007.webp",
+        "kind": "npc",
+        "side": "right"
+      },
+      "actionId": "play",
+      "title": "준비하는 즐거움",
+      "eyebrow": "EQUIPMENT",
+      "href": "/play",
+      "label": "게임 시작"
+    },
+    {
+      "id": "together",
+      "name": "함께하는 세계",
+      "description": "동료를 만나고 파티와 길드로 모험을 이어갑니다.",
+      "image": "/assets/rpg/ui/entry-bg-social-rest-chat-left-20260628.webp",
+      "tag": "TOGETHER",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/hero-healers.webp",
+        "kind": "pair",
+        "side": "right"
+      },
+      "actionId": "play",
+      "title": "함께하는 세계",
+      "eyebrow": "TOGETHER",
+      "href": "/play",
+      "label": "게임 시작"
+    },
+    {
+      "id": "clinic-life",
+      "name": "진료실의 일상",
+      "description": "진료실 현황과 치료 흐름을 게임 속에서 함께 살펴보세요.",
+      "image": "/assets/rpg/ui/generated-previews/18-clinic-operations-center-20260628.webp",
+      "tag": "CLINIC",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n002.webp",
+        "kind": "npc",
+        "side": "right"
+      },
+      "actionId": "clinic",
+      "title": "진료실의 일상",
+      "eyebrow": "CLINIC",
+      "href": "/rpg/clinic",
+      "label": "진료실 열기"
+    }
+  ],
+  "guild": [
+    {
+      "id": "party",
+      "name": "파티",
+      "description": "동료를 초대하고 경험치와 보상을 나누며 함께 성장하세요.",
+      "image": "/assets/rpg/ui/generated-previews/17-community-party-center-20260628.png",
+      "tag": "PARTY",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/hero-healers.webp",
+        "kind": "pair",
+        "side": "right"
+      },
+      "actionId": "play",
+      "motionActorIds": [
+        "medical-male",
+        "medical-female"
+      ],
+      "title": "파티",
+      "eyebrow": "PARTY",
+      "href": "/play",
+      "label": "게임 시작",
+      "motionActors": [
+        {
+          "id": "medical-male",
+          "name": "남성 의료진",
+          "sprite": {
+            "src": "/assets/intro-sprites/c8a0a4468e14755cbd5e08ab-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 300,
+            "displayWidth": 180,
+            "durationMs": 900,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "idle",
+            "action": "normal",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": true
+          }
+        },
+        {
+          "id": "medical-female",
+          "name": "여성 의료진",
+          "sprite": {
+            "src": "/assets/intro-sprites/60c3e1ee747410741e191e91-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 300,
+            "displayWidth": 180,
+            "durationMs": 900,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "idle",
+            "action": "normal",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "guild",
+      "name": "길드",
+      "description": "같은 목표를 향해 모이는 동료들과 나만의 이야기를 만드세요.",
+      "image": "/assets/rpg/ui/entry-bg-social-rest-chat-left-20260628.webp",
+      "tag": "GUILD",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n017.webp",
+        "kind": "npc",
+        "side": "right"
+      },
+      "actionId": "play",
+      "motionActorIds": [
+        "portrait-n017"
+      ],
+      "title": "길드",
+      "eyebrow": "GUILD",
+      "href": "/play",
+      "label": "게임 시작",
+      "motionActors": [
+        {
+          "id": "portrait-n017",
+          "name": "길드마스터",
+          "sprite": {
+            "src": "/assets/rpg/ui/intro/v1/npc-motion/v1/portrait-n017/idle.webp",
+            "frameWidth": 136,
+            "frameHeight": 324,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 302.0833333333333,
+            "displayWidth": 136,
+            "durationMs": 3625,
+            "direction": "s",
+            "originX": 63.0,
+            "originY": 317.521748,
+            "motion": "idle",
+            "action": "normal",
+            "loop": true,
+            "staticFrame": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "siege",
+      "name": "공성·길드전",
+      "description": "길드의 동료와 참가를 준비하고 새로운 전장에 도전하세요.",
+      "image": "/assets/rpg/ui/generated-previews/19-raid-prep-center-20260628.png",
+      "tag": "GUILD BATTLE",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+        "kind": "portrait",
+        "side": "right"
+      },
+      "actionId": "play",
+      "motionActorIds": [
+        "medical-male",
+        "medical-female"
+      ],
+      "title": "공성·길드전",
+      "eyebrow": "GUILD BATTLE",
+      "href": "/play",
+      "label": "게임 시작",
+      "motionActors": [
+        {
+          "id": "medical-male",
+          "name": "남성 의료진",
+          "sprite": {
+            "src": "/assets/intro-sprites/c8a0a4468e14755cbd5e08ab-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 300,
+            "displayWidth": 180,
+            "durationMs": 900,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "idle",
+            "action": "normal",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": true
+          }
+        },
+        {
+          "id": "medical-female",
+          "name": "여성 의료진",
+          "sprite": {
+            "src": "/assets/intro-sprites/60c3e1ee747410741e191e91-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 300,
+            "displayWidth": 180,
+            "durationMs": 900,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "idle",
+            "action": "normal",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": true
+          }
+        }
+      ]
+    }
+  ],
+  "medical": {
+    "skills": [
+      {
+        "id": "lk-clinic-004",
+        "name": "침",
+        "description": "기본 효과: 대상에게 마법 위력의 100% 피해를 줍니다.",
+        "icon": "/assets/rpg/skills/icons/lk-clinic/004.png",
+        "performers": [
+          {
+            "src": "/assets/intro-sprites/fae3d1021f59200823079342-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 250,
+            "displayWidth": 230,
+            "durationMs": 3000,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "medical",
+            "action": "needle2",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+          },
+          null
+        ],
+        "performerTools": [],
+        "performerIndex": 0,
+        "effect": {
+          "src": "/assets/rpg/skills/effects/medical-generated/r1/004/variants-transparent/00.png",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "frames": 16,
+          "rows": 1,
+          "row": 0,
+          "frameMs": 80,
+          "durationMs": 1280,
+          "originX": 128,
+          "originY": 240,
+          "displayWidth": 252,
+          "variantIndex": 0,
+          "effectId": "rpg-medical-004-r1",
+          "anchor": "caster",
+          "introDemoAnchor": "target",
+          "placementType": "status_body_aura",
+          "scalePercent": 190,
+          "offsetX": 0,
+          "offsetY": 0,
+          "playback": "once"
+        },
+        "effectStartMs": 1500,
+        "effectDurationMs": 1280,
+        "growthNodeId": "medical-004",
+        "effectId": "rpg-medical-004-r1",
+        "demoMode": "target",
+        "executionKind": "attack",
+        "targetMode": "enemy",
+        "castMode": "manual"
+      },
+      {
+        "id": "lk-clinic-005",
+        "name": "약침",
+        "description": "기본 효과: 대상에게 마법 위력의 100% 피해를 줍니다.",
+        "icon": "/assets/rpg/skills/icons/lk-clinic/005.png",
+        "performers": [
+          null,
+          {
+            "src": "/assets/intro-sprites/61a88c892a8fa5b7ab437e95-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 9,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 100,
+            "displayWidth": 230,
+            "durationMs": 900,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "attack",
+            "action": "medical_thrust",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+          }
+        ],
+        "performerTools": [
+          null,
+          {
+            "src": "/assets/intro-sprites/034150acab969571da122608-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 9,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 100,
+            "displayWidth": 230,
+            "durationMs": 900,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "attack",
+            "action": "identity-combat-care-20260912-r1-200-medical-syringe",
+            "toolId": "medical-syringe",
+            "logicalBody": "200",
+            "layer": "front"
+          }
+        ],
+        "performerIndex": 1,
+        "effect": {
+          "src": "/assets/rpg/skills/effects/medical-generated/r1/005/variants-transparent/00.png",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "frames": 16,
+          "rows": 1,
+          "row": 0,
+          "frameMs": 80,
+          "durationMs": 1280,
+          "originX": 128,
+          "originY": 240,
+          "displayWidth": 252,
+          "variantIndex": 0,
+          "effectId": "rpg-medical-005-r1",
+          "anchor": "caster",
+          "introDemoAnchor": "target",
+          "placementType": "status_body_aura",
+          "scalePercent": 190,
+          "offsetX": 0,
+          "offsetY": 0,
+          "playback": "once"
+        },
+        "effectStartMs": 400,
+        "effectDurationMs": 1280,
+        "growthNodeId": "medical-005",
+        "effectId": "rpg-medical-005-r1",
+        "demoMode": "target",
+        "executionKind": "attack",
+        "targetMode": "enemy",
+        "castMode": "manual"
+      },
+      {
+        "id": "lk-clinic-006",
+        "name": "도침",
+        "description": "기본 효과: 대상에게 마법 위력의 100% 피해를 줍니다.",
+        "icon": "/assets/rpg/skills/icons/lk-clinic/006.png",
+        "performers": [
+          {
+            "src": "/assets/intro-sprites/31009ab9c641e2b7175b52ed-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 9,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 100,
+            "displayWidth": 230,
+            "durationMs": 900,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "attack",
+            "action": "medical_thrust",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+          },
+          null
+        ],
+        "performerTools": [
+          {
+            "src": "/assets/intro-sprites/2199f6b2f8066d4e3e2d4d4e-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 9,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 100,
+            "displayWidth": 230,
+            "durationMs": 900,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "attack",
+            "action": "identity-combat-care-20260912-r1-100-medical-syringe",
+            "toolId": "medical-syringe",
+            "logicalBody": "100",
+            "layer": "front"
+          },
+          null
+        ],
+        "performerIndex": 0,
+        "effect": {
+          "src": "/assets/rpg/skills/effects/medical-generated/r1/006/variants-transparent/00.png",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "frames": 16,
+          "rows": 1,
+          "row": 0,
+          "frameMs": 80,
+          "durationMs": 1280,
+          "originX": 128,
+          "originY": 240,
+          "displayWidth": 252,
+          "variantIndex": 0,
+          "effectId": "rpg-medical-006-r1",
+          "anchor": "caster",
+          "introDemoAnchor": "target",
+          "placementType": "status_body_aura",
+          "scalePercent": 190,
+          "offsetX": 0,
+          "offsetY": 0,
+          "playback": "once"
+        },
+        "effectStartMs": 400,
+        "effectDurationMs": 1280,
+        "growthNodeId": "medical-006",
+        "effectId": "rpg-medical-006-r1",
+        "demoMode": "target",
+        "executionKind": "attack",
+        "targetMode": "enemy",
+        "castMode": "manual"
+      },
+      {
+        "id": "lk-clinic-007",
+        "name": "추나",
+        "description": "기본 효과: 대상에게 마법 위력의 110% 피해를 줍니다.",
+        "icon": "/assets/rpg/skills/icons/lk-clinic/007.png",
+        "performers": [
+          null,
+          {
+            "src": "/assets/intro-sprites/73988f7afdcea18430c87567-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 200,
+            "displayWidth": 230,
+            "durationMs": 2400,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "medical",
+            "action": "chuna",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+          }
+        ],
+        "performerTools": [],
+        "performerIndex": 1,
+        "effect": {
+          "src": "/assets/rpg/skills/effects/medical-generated/r1/007/variants-transparent/00.png",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "frames": 16,
+          "rows": 1,
+          "row": 0,
+          "frameMs": 80,
+          "durationMs": 1280,
+          "originX": 128,
+          "originY": 240,
+          "displayWidth": 252,
+          "variantIndex": 0,
+          "effectId": "rpg-medical-007-r1",
+          "anchor": "caster",
+          "introDemoAnchor": "target",
+          "placementType": "status_body_aura",
+          "scalePercent": 190,
+          "offsetX": 0,
+          "offsetY": 0,
+          "playback": "once"
+        },
+        "effectStartMs": 1200,
+        "effectDurationMs": 1280,
+        "growthNodeId": "medical-007",
+        "effectId": "rpg-medical-007-r1",
+        "demoMode": "target",
+        "executionKind": "attack",
+        "targetMode": "enemy",
+        "castMode": "manual"
+      },
+      {
+        "id": "lk-clinic-012",
+        "name": "초음파",
+        "description": "기본 효과: 대상 주변 반경 1셀 범위의 적에게 마법 위력의 80% 피해를 줍니다. 1.5초 동안 이동속도를 15% 낮춥니다.",
+        "icon": "/assets/rpg/skills/icons/lk-clinic/012.png",
+        "performers": [
+          {
+            "src": "/assets/intro-sprites/a625febf1a0709b3bc52a31d-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 200,
+            "displayWidth": 230,
+            "durationMs": 2400,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "medical",
+            "action": "ultrasound_seated",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+          },
+          null
+        ],
+        "performerTools": [],
+        "performerIndex": 0,
+        "effect": {
+          "src": "/assets/rpg/skills/effects/medical-generated/r1/012/variants-transparent/00.png",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "frames": 16,
+          "rows": 1,
+          "row": 0,
+          "frameMs": 80,
+          "durationMs": 1280,
+          "originX": 128,
+          "originY": 240,
+          "displayWidth": 252,
+          "variantIndex": 0,
+          "effectId": "rpg-medical-012-r1",
+          "anchor": "caster",
+          "introDemoAnchor": "target",
+          "placementType": "status_body_aura",
+          "scalePercent": 190,
+          "offsetX": 0,
+          "offsetY": 0,
+          "playback": "once"
+        },
+        "effectStartMs": 1200,
+        "effectDurationMs": 1280,
+        "growthNodeId": "medical-012",
+        "effectId": "rpg-medical-012-r1",
+        "demoMode": "target",
+        "executionKind": "attack",
+        "targetMode": "area_enemy",
+        "castMode": "manual"
+      },
+      {
+        "id": "lk-clinic-019",
+        "name": "한약",
+        "description": "기본 효과: 자신 또는 아군을 대상 최대 생명력의 15%만큼 즉시 회복합니다.",
+        "icon": "/assets/rpg/skills/icons/lk-clinic/019.png",
+        "performers": [
+          null,
+          {
+            "src": "/assets/intro-sprites/ec1e0887e2708158682c72a6-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 12,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 200,
+            "displayWidth": 230,
+            "durationMs": 2400,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "medical",
+            "action": "drink_herbal_pouch",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+          }
+        ],
+        "performerTools": [],
+        "performerIndex": 1,
+        "effect": {
+          "src": "/assets/rpg/skills/effects/medical-generated/r1/019/variants-transparent/00.png",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "frames": 16,
+          "rows": 1,
+          "row": 0,
+          "frameMs": 80,
+          "durationMs": 1280,
+          "originX": 128,
+          "originY": 240,
+          "displayWidth": 252,
+          "variantIndex": 0,
+          "effectId": "rpg-medical-019-r1",
+          "anchor": "caster",
+          "introDemoAnchor": "caster",
+          "placementType": "status_body_aura",
+          "scalePercent": 190,
+          "offsetX": 0,
+          "offsetY": 0,
+          "playback": "once"
+        },
+        "effectStartMs": 1200,
+        "effectDurationMs": 1280,
+        "growthNodeId": "medical-019",
+        "effectId": "rpg-medical-019-r1",
+        "demoMode": "self",
+        "executionKind": "heal",
+        "targetMode": "ally",
+        "castMode": "manual"
+      },
+      {
+        "id": "lk-clinic-001",
+        "name": "물치",
+        "description": "기본 효과: 자신 또는 아군을 대상 최대 생명력의 15%만큼 즉시 회복합니다.",
+        "icon": "/assets/rpg/skills/icons/lk-clinic/001.png",
+        "performers": [
+          {
+            "src": "/assets/intro-sprites/c1f4c4dc39bb3d18d5547212-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 9,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 40,
+            "displayWidth": 230,
+            "durationMs": 360,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "cast",
+            "action": "normal",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+          },
+          null
+        ],
+        "performerTools": [],
+        "performerIndex": 0,
+        "effect": {
+          "src": "/assets/rpg/skills/effects/medical-generated/r1/001/variants-transparent/00.png",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "frames": 16,
+          "rows": 1,
+          "row": 0,
+          "frameMs": 80,
+          "durationMs": 1280,
+          "originX": 128,
+          "originY": 240,
+          "displayWidth": 252,
+          "variantIndex": 0,
+          "effectId": "rpg-medical-001-r1",
+          "anchor": "caster",
+          "introDemoAnchor": "caster",
+          "placementType": "status_body_aura",
+          "scalePercent": 190,
+          "offsetX": 0,
+          "offsetY": 0,
+          "playback": "once"
+        },
+        "effectStartMs": 0,
+        "effectDurationMs": 1280,
+        "growthNodeId": "medical-001",
+        "effectId": "rpg-medical-001-r1",
+        "demoMode": "self",
+        "executionKind": "heal",
+        "targetMode": "ally",
+        "castMode": "manual"
+      },
+      {
+        "id": "lk-clinic-013",
+        "name": "테이핑",
+        "description": "기본 효과: 자신 또는 아군에게 대상 최대 생명력의 15%에 해당하는 피해를 흡수하는 보호막을 5초 동안 부여합니다.",
+        "icon": "/assets/rpg/skills/icons/lk-clinic/013.png",
+        "performers": [
+          null,
+          {
+            "src": "/assets/intro-sprites/0483b8f666865ba695c38e17-256-r1.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 9,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 40,
+            "displayWidth": 230,
+            "durationMs": 360,
+            "direction": "ne",
+            "originX": 128,
+            "originY": 239,
+            "motion": "cast",
+            "action": "normal",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+          }
+        ],
+        "performerTools": [],
+        "performerIndex": 1,
+        "effect": {
+          "src": "/assets/rpg/skills/effects/medical-generated/r1/013/variants-transparent/00.png",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "frames": 16,
+          "rows": 1,
+          "row": 0,
+          "frameMs": 80,
+          "durationMs": 1280,
+          "originX": 128,
+          "originY": 240,
+          "displayWidth": 252,
+          "variantIndex": 0,
+          "effectId": "rpg-medical-013-r1",
+          "anchor": "caster",
+          "introDemoAnchor": "caster",
+          "placementType": "status_body_aura",
+          "scalePercent": 190,
+          "offsetX": 0,
+          "offsetY": 0,
+          "playback": "once"
+        },
+        "effectStartMs": 0,
+        "effectDurationMs": 1280,
+        "growthNodeId": "medical-013",
+        "effectId": "rpg-medical-013-r1",
+        "demoMode": "self",
+        "executionKind": "shield",
+        "targetMode": "ally",
+        "castMode": "manual"
+      }
+    ],
+    "performers": [
+      {
+        "name": "남성 의료진",
+        "body": "300",
+        "logicalBody": "100"
+      },
+      {
+        "name": "여성 의료진",
+        "body": "400",
+        "logicalBody": "200"
+      }
+    ],
+    "target": {
+      "name": "허수아비",
+      "image": "/assets/rpg/monsters/sprites/M828/walk/normal/sw_00.png",
+      "spriteSW": {
+        "src": "/assets/intro-sprites/a6abf7514f784f25c2232b8b-128-r5.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frames": 4,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 150,
+        "displayWidth": 180,
+        "durationMs": 600,
+        "direction": "sw",
+        "originX": 64,
+        "originY": 112,
+        "motion": "walk",
+        "action": "normal",
+        "staticFrame": 0
+      },
+      "freezeFrame": 0,
+      "description": "의료 동작을 살펴보기 위한 남서 방향의 소개 시연 소품"
+    }
+  },
+  "elements": [
+    {
+      "id": "fire",
+      "name": "불",
+      "symbol": "火",
+      "accent": "#dc6a45",
+      "description": "화상을 남기고 화염을 넓혀 마지막 폭발로 이어가는 연소 계열.",
+      "icon": "/assets/rpg/skills/icons/lk-custom/011.png",
+      "skillName": "화염구",
+      "skillDescription": "불덩이로 적을 공격하고 화상 표식을 남깁니다.",
+      "skillId": "lk-custom-011",
+      "growthNodeId": "fire-011",
+      "castMode": "manual",
+      "sprite": {
+        "src": "/assets/intro-sprites/c1f4c4dc39bb3d18d5547212-256-r1.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 9,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 40,
+        "displayWidth": 180,
+        "durationMs": 360,
+        "direction": "ne",
+        "originX": 128,
+        "originY": 239,
+        "motion": "cast",
+        "action": "normal",
+        "logicalBody": "100",
+        "visualBody": "300",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      },
+      "effect": {
+        "src": "/assets/rpg/skills/effects/chain-generated/r2/fireball/variants-transparent/00.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 16,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 80,
+        "durationMs": 1280,
+        "originX": 128,
+        "originY": 128,
+        "displayWidth": 76,
+        "variantIndex": 0,
+        "effectId": "rpg-chain-fireball-r2",
+        "anchor": "caster",
+        "introDemoAnchor": "target",
+        "placementType": "attack_projectile",
+        "scalePercent": 170,
+        "offsetX": 0,
+        "offsetY": -70,
+        "playback": "once"
+      },
+      "effectStartMs": 0,
+      "effectDurationMs": 1280,
+      "castDurationMs": 360,
+      "skills": [
+        {
+          "id": "lk-custom-011",
+          "growthNodeId": "fire-011",
+          "name": "화염구",
+          "description": "불덩이로 적을 공격하고 화상 표식을 남깁니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/011.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/fireball/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 128,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-fireball-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "attack_projectile",
+            "scalePercent": 170,
+            "offsetX": 0,
+            "offsetY": -70,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [],
+          "links": []
+        },
+        {
+          "id": "lk-custom-061",
+          "growthNodeId": "fire-061",
+          "name": "화염 장벽",
+          "description": "불길을 펼쳐 주변 적을 공격하고 화상 연계를 이어갑니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/061.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/fire-wall/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-fire-wall-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_foot_rise",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [
+            "fire-011"
+          ],
+          "links": [
+            {
+              "id": "fire-followup-1",
+              "type": "followup",
+              "fromNodeId": "fire-011",
+              "toNodeId": "fire-061",
+              "requiresStatus": "",
+              "consumeStatus": false,
+              "result": "후속 시전 연결",
+              "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+              "schoolId": "fire",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        },
+        {
+          "id": "lk-custom-112",
+          "growthNodeId": "fire-112",
+          "name": "용암 분출",
+          "description": "지면을 폭발시킵니다. 편성한 연계의 화상 조건을 충족하면 마무리를 강화합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/112.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/lava-eruption/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-lava-eruption-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_foot_rise",
+            "scalePercent": 160,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [
+            "fire-061"
+          ],
+          "links": [
+            {
+              "id": "fire-status-1",
+              "type": "status",
+              "fromNodeId": "fire-011",
+              "toNodeId": "fire-112",
+              "requiresStatus": "burn",
+              "consumeStatus": true,
+              "result": "상태를 소모하여 마무리 강화",
+              "description": "편성한 스킬이 자신이 남긴 유효한 표식을 연결합니다. 소비형 연계는 발동할 때 해당 표식을 사용합니다.",
+              "schoolId": "fire",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            },
+            {
+              "id": "fire-followup-2",
+              "type": "followup",
+              "fromNodeId": "fire-061",
+              "toNodeId": "fire-112",
+              "requiresStatus": "",
+              "consumeStatus": false,
+              "result": "주스킬 연속 시전",
+              "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+              "schoolId": "fire",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        },
+        {
+          "id": "lk-custom-076",
+          "growthNodeId": "fire-076",
+          "name": "화상",
+          "description": "불꽃으로 적을 공격하여 화상 연계를 보완합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/076.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/burn/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-burn-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "status_body_aura",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "enhancement",
+          "prerequisites": [
+            "fire-011"
+          ],
+          "links": []
+        },
+        {
+          "id": "lk-custom-089",
+          "growthNodeId": "fire-089",
+          "name": "불꽃 무기",
+          "description": "일정 시간 기본 무기 명중에 불 추가 피해를 부여합니다. 냉기 무기와는 하나만 유지됩니다. 기존 공용 스킬북도 사용할 수 있습니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/089.png",
+          "effect": {
+            "src": "/assets/characters/paper-doll/weapons/effects/weapon-effects-r1/art/fire-sword1h/strip.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 64,
+            "originY": 64,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-fire-weapon-r3",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "attack_weapon_overlay",
+            "scalePercent": 100,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 320,
+          "castMode": "manual",
+          "role": "support",
+          "prerequisites": [
+            "fire-076"
+          ],
+          "links": []
+        },
+        {
+          "id": "lk-custom-018",
+          "growthNodeId": "fire-018",
+          "name": "유성 낙하",
+          "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 MP와 재사용 조건에 따라 자동 발동하는 마무리 기술입니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/018.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/meteor/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-meteor-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_foot_rise",
+            "scalePercent": 160,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "automatic",
+          "role": "ultimate",
+          "prerequisites": [
+            "fire-112"
+          ],
+          "links": [
+            {
+              "id": "fire-awakening",
+              "type": "status",
+              "fromNodeId": "fire-011",
+              "toNodeId": "fire-018",
+              "requiresStatus": "burn",
+              "consumeStatus": false,
+              "result": "각성 마무리 증폭",
+              "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 조건을 충족한 궁극이 자동 발동합니다.",
+              "schoolId": "fire",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        }
+      ],
+      "defaultSkillIndex": 0,
+      "links": [
+        {
+          "id": "fire-followup-1",
+          "type": "followup",
+          "fromNodeId": "fire-011",
+          "toNodeId": "fire-061",
+          "requiresStatus": "",
+          "consumeStatus": false,
+          "result": "후속 시전 연결",
+          "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+          "schoolId": "fire",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "fire-status-1",
+          "type": "status",
+          "fromNodeId": "fire-011",
+          "toNodeId": "fire-112",
+          "requiresStatus": "burn",
+          "consumeStatus": true,
+          "result": "상태를 소모하여 마무리 강화",
+          "description": "편성한 스킬이 자신이 남긴 유효한 표식을 연결합니다. 소비형 연계는 발동할 때 해당 표식을 사용합니다.",
+          "schoolId": "fire",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "fire-followup-2",
+          "type": "followup",
+          "fromNodeId": "fire-061",
+          "toNodeId": "fire-112",
+          "requiresStatus": "",
+          "consumeStatus": false,
+          "result": "주스킬 연속 시전",
+          "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+          "schoolId": "fire",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "fire-awakening",
+          "type": "status",
+          "fromNodeId": "fire-011",
+          "toNodeId": "fire-018",
+          "requiresStatus": "burn",
+          "consumeStatus": false,
+          "result": "각성 마무리 증폭",
+          "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 조건을 충족한 궁극이 자동 발동합니다.",
+          "schoolId": "fire",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        }
+      ],
+      "videoSrc": "/assets/rpg/ui/intro/v6-showcase/element-fire.webm",
+      "videoPoster": "/assets/rpg/ui/intro/v5-medical-scenery/element-herb-garden.webp"
+    },
+    {
+      "id": "water",
+      "name": "물",
+      "symbol": "水",
+      "accent": "#4a9cce",
+      "description": "냉기를 쌓아 빙결을 만들고 얼음을 깨뜨리는 제어·회복 계열.",
+      "icon": "/assets/rpg/skills/icons/lk-custom/012.png",
+      "skillName": "얼음창",
+      "skillDescription": "얼음창으로 적을 공격하고 냉기 표식을 남깁니다.",
+      "skillId": "lk-custom-012",
+      "growthNodeId": "water-012",
+      "castMode": "manual",
+      "sprite": {
+        "src": "/assets/intro-sprites/0483b8f666865ba695c38e17-256-r1.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 9,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 40,
+        "displayWidth": 180,
+        "durationMs": 360,
+        "direction": "ne",
+        "originX": 128,
+        "originY": 239,
+        "motion": "cast",
+        "action": "normal",
+        "logicalBody": "200",
+        "visualBody": "400",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      },
+      "effect": {
+        "src": "/assets/rpg/skills/effects/chain-generated/r2/ice-spear/variants-transparent/00.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 16,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 80,
+        "durationMs": 1280,
+        "originX": 128,
+        "originY": 128,
+        "displayWidth": 76,
+        "variantIndex": 0,
+        "effectId": "rpg-chain-ice-spear-r2",
+        "anchor": "caster",
+        "introDemoAnchor": "target",
+        "placementType": "attack_projectile",
+        "scalePercent": 170,
+        "offsetX": 0,
+        "offsetY": -70,
+        "playback": "once"
+      },
+      "effectStartMs": 0,
+      "effectDurationMs": 1280,
+      "castDurationMs": 360,
+      "skills": [
+        {
+          "id": "lk-custom-012",
+          "growthNodeId": "water-012",
+          "name": "얼음창",
+          "description": "얼음창으로 적을 공격하고 냉기 표식을 남깁니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/012.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/ice-spear/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 128,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-ice-spear-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "attack_projectile",
+            "scalePercent": 170,
+            "offsetX": 0,
+            "offsetY": -70,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [],
+          "links": []
+        },
+        {
+          "id": "lk-custom-040",
+          "growthNodeId": "water-040",
+          "name": "빙결",
+          "description": "적을 공격하고 잠시 이동을 막아 빙결 연계를 준비합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/040.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/freeze/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-freeze-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_body",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [
+            "water-012"
+          ],
+          "links": [
+            {
+              "id": "water-followup-1",
+              "type": "followup",
+              "fromNodeId": "water-012",
+              "toNodeId": "water-040",
+              "requiresStatus": "",
+              "consumeStatus": false,
+              "result": "후속 시전 연결",
+              "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+              "schoolId": "water",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        },
+        {
+          "id": "lk-custom-111",
+          "growthNodeId": "water-111",
+          "name": "빙하 가시",
+          "description": "얼음 가시로 적을 공격합니다. 편성한 연계의 빙결 조건을 충족하면 피해를 강화합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/111.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/ice-spikes/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-ice-spikes-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_foot_rise",
+            "scalePercent": 160,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [
+            "water-040"
+          ],
+          "links": [
+            {
+              "id": "water-status-1",
+              "type": "status",
+              "fromNodeId": "water-040",
+              "toNodeId": "water-111",
+              "requiresStatus": "frozen",
+              "consumeStatus": true,
+              "result": "상태를 소모하여 마무리 강화",
+              "description": "편성한 스킬이 자신이 남긴 유효한 표식을 연결합니다. 소비형 연계는 발동할 때 해당 표식을 사용합니다.",
+              "schoolId": "water",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            },
+            {
+              "id": "water-followup-2",
+              "type": "followup",
+              "fromNodeId": "water-040",
+              "toNodeId": "water-111",
+              "requiresStatus": "",
+              "consumeStatus": false,
+              "result": "주스킬 연속 시전",
+              "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+              "schoolId": "water",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        },
+        {
+          "id": "lk-custom-090",
+          "growthNodeId": "water-090",
+          "name": "냉기 무기",
+          "description": "일정 시간 기본 무기 명중에 냉기 추가 피해와 짧은 둔화를 부여합니다. 불꽃 무기와는 하나만 유지됩니다. 기존 공용 스킬북도 사용할 수 있습니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/090.png",
+          "effect": {
+            "src": "/assets/characters/paper-doll/weapons/effects/weapon-effects-r1/art/ice-sword1h/strip.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 64,
+            "originY": 64,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-ice-weapon-r3",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "attack_weapon_overlay",
+            "scalePercent": 100,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 320,
+          "castMode": "manual",
+          "role": "enhancement",
+          "prerequisites": [
+            "water-012"
+          ],
+          "links": []
+        },
+        {
+          "id": "lk-custom-023",
+          "growthNodeId": "water-023",
+          "name": "재생",
+          "description": "자신의 생명력을 회복하여 전투를 보완합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/023.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/regeneration/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-regeneration-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "status_body_aura",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "support",
+          "prerequisites": [
+            "water-090"
+          ],
+          "links": []
+        },
+        {
+          "id": "lk-custom-062",
+          "growthNodeId": "water-062",
+          "name": "얼음 폭풍",
+          "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 MP와 재사용 조건에 따라 자동 발동하는 마무리 기술입니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/062.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/ice-storm/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-ice-storm-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_foot_rise",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "automatic",
+          "role": "ultimate",
+          "prerequisites": [
+            "water-111"
+          ],
+          "links": [
+            {
+              "id": "water-awakening",
+              "type": "status",
+              "fromNodeId": "water-040",
+              "toNodeId": "water-062",
+              "requiresStatus": "frozen",
+              "consumeStatus": false,
+              "result": "각성 마무리 증폭",
+              "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 조건을 충족한 궁극이 자동 발동합니다.",
+              "schoolId": "water",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        }
+      ],
+      "defaultSkillIndex": 0,
+      "links": [
+        {
+          "id": "water-followup-1",
+          "type": "followup",
+          "fromNodeId": "water-012",
+          "toNodeId": "water-040",
+          "requiresStatus": "",
+          "consumeStatus": false,
+          "result": "후속 시전 연결",
+          "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+          "schoolId": "water",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "water-status-1",
+          "type": "status",
+          "fromNodeId": "water-040",
+          "toNodeId": "water-111",
+          "requiresStatus": "frozen",
+          "consumeStatus": true,
+          "result": "상태를 소모하여 마무리 강화",
+          "description": "편성한 스킬이 자신이 남긴 유효한 표식을 연결합니다. 소비형 연계는 발동할 때 해당 표식을 사용합니다.",
+          "schoolId": "water",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "water-followup-2",
+          "type": "followup",
+          "fromNodeId": "water-040",
+          "toNodeId": "water-111",
+          "requiresStatus": "",
+          "consumeStatus": false,
+          "result": "주스킬 연속 시전",
+          "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+          "schoolId": "water",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "water-awakening",
+          "type": "status",
+          "fromNodeId": "water-040",
+          "toNodeId": "water-062",
+          "requiresStatus": "frozen",
+          "consumeStatus": false,
+          "result": "각성 마무리 증폭",
+          "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 조건을 충족한 궁극이 자동 발동합니다.",
+          "schoolId": "water",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        }
+      ],
+      "videoSrc": "/assets/rpg/ui/intro/v6-showcase/element-water.webm",
+      "videoPoster": "/assets/rpg/ui/intro/v5-medical-scenery/element-herb-garden.webp"
+    },
+    {
+      "id": "wind",
+      "name": "바람",
+      "symbol": "風",
+      "accent": "#6aaf8e",
+      "description": "바람 칼날·신속의 축복·검기 폭발로 이어지는 신속 연계 계열. 대쉬는 트리 밖의 기본 필수 스킬입니다.",
+      "icon": "/assets/rpg/skills/icons/lk-custom/015.png",
+      "skillName": "바람 칼날",
+      "skillDescription": "바람으로 적을 공격하고 돌풍 표식을 남깁니다.",
+      "skillId": "lk-custom-015",
+      "growthNodeId": "wind-015",
+      "castMode": "manual",
+      "sprite": {
+        "src": "/assets/intro-sprites/0483b8f666865ba695c38e17-256-r1.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 9,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 40,
+        "displayWidth": 180,
+        "durationMs": 360,
+        "direction": "ne",
+        "originX": 128,
+        "originY": 239,
+        "motion": "cast",
+        "action": "normal",
+        "logicalBody": "200",
+        "visualBody": "400",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      },
+      "effect": {
+        "src": "/assets/rpg/skills/effects/chain-generated/r2/wind-blade/variants-transparent/00.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 16,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 80,
+        "durationMs": 1280,
+        "originX": 128,
+        "originY": 128,
+        "displayWidth": 76,
+        "variantIndex": 0,
+        "effectId": "rpg-chain-wind-blade-r2",
+        "anchor": "caster",
+        "introDemoAnchor": "target",
+        "placementType": "attack_projectile",
+        "scalePercent": 170,
+        "offsetX": 0,
+        "offsetY": -70,
+        "playback": "once"
+      },
+      "effectStartMs": 0,
+      "effectDurationMs": 1280,
+      "castDurationMs": 360,
+      "skills": [
+        {
+          "id": "lk-custom-015",
+          "growthNodeId": "wind-015",
+          "name": "바람 칼날",
+          "description": "바람으로 적을 공격하고 돌풍 표식을 남깁니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/015.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/wind-blade/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 128,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-wind-blade-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "attack_projectile",
+            "scalePercent": 170,
+            "offsetX": 0,
+            "offsetY": -70,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [],
+          "links": []
+        },
+        {
+          "id": "lk-custom-124",
+          "growthNodeId": "wind-124",
+          "name": "신속의 축복",
+          "description": "이동속도를 높이고 신속 표식으로 다음 연계를 준비합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/124.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/haste/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-haste-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "status_body_aura",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [
+            "wind-015"
+          ],
+          "links": [
+            {
+              "id": "wind-followup-1",
+              "type": "followup",
+              "fromNodeId": "wind-015",
+              "toNodeId": "wind-124",
+              "requiresStatus": "",
+              "consumeStatus": false,
+              "result": "후속 시전 연결",
+              "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+              "schoolId": "wind",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        },
+        {
+          "id": "lk-custom-100",
+          "growthNodeId": "wind-100",
+          "name": "검기 폭발",
+          "description": "검기를 폭발시킵니다. 편성한 연계에서 신속의 축복을 이어 쓰면 신속을 소모하여 피해를 강화합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/100.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/wind-blade/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 128,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-wind-blade-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_body",
+            "scalePercent": 160,
+            "offsetX": 0,
+            "offsetY": -25,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [
+            "wind-124"
+          ],
+          "links": [
+            {
+              "id": "wind-followup-2",
+              "type": "followup",
+              "fromNodeId": "wind-124",
+              "toNodeId": "wind-100",
+              "requiresStatus": "haste",
+              "consumeStatus": true,
+              "result": "신속 소모: 검기 폭발 강화",
+              "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+              "schoolId": "wind",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        },
+        {
+          "id": "lk-custom-036",
+          "growthNodeId": "wind-036",
+          "name": "공격속도 강화",
+          "description": "일정 시간 공격속도를 높입니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/036.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/attack-speed/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-attack-speed-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "status_body_aura",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "enhancement",
+          "prerequisites": [
+            "wind-015"
+          ],
+          "links": []
+        },
+        {
+          "id": "lk-custom-080",
+          "growthNodeId": "wind-080",
+          "name": "회피 강화",
+          "description": "일정 시간 방어를 보완하여 적의 공격에 대응합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/080.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/evasion/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-evasion-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "status_body_aura",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "support",
+          "prerequisites": [
+            "wind-036"
+          ],
+          "links": []
+        },
+        {
+          "id": "lk-custom-115",
+          "growthNodeId": "wind-115",
+          "name": "바람 감옥",
+          "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 MP와 재사용 조건에 따라 자동 발동하는 마무리 기술입니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/115.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/wind-prison/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-wind-prison-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_body",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "automatic",
+          "role": "ultimate",
+          "prerequisites": [
+            "wind-100"
+          ],
+          "links": [
+            {
+              "id": "wind-awakening",
+              "type": "status",
+              "fromNodeId": "wind-015",
+              "toNodeId": "wind-115",
+              "requiresStatus": "gust",
+              "consumeStatus": false,
+              "result": "돌풍으로 바람 감옥 증폭",
+              "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 조건을 충족한 궁극이 자동 발동합니다.",
+              "schoolId": "wind",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        }
+      ],
+      "defaultSkillIndex": 0,
+      "links": [
+        {
+          "id": "wind-followup-1",
+          "type": "followup",
+          "fromNodeId": "wind-015",
+          "toNodeId": "wind-124",
+          "requiresStatus": "",
+          "consumeStatus": false,
+          "result": "후속 시전 연결",
+          "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+          "schoolId": "wind",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "wind-followup-2",
+          "type": "followup",
+          "fromNodeId": "wind-124",
+          "toNodeId": "wind-100",
+          "requiresStatus": "haste",
+          "consumeStatus": true,
+          "result": "신속 소모: 검기 폭발 강화",
+          "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+          "schoolId": "wind",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "wind-awakening",
+          "type": "status",
+          "fromNodeId": "wind-015",
+          "toNodeId": "wind-115",
+          "requiresStatus": "gust",
+          "consumeStatus": false,
+          "result": "돌풍으로 바람 감옥 증폭",
+          "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 조건을 충족한 궁극이 자동 발동합니다.",
+          "schoolId": "wind",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        }
+      ],
+      "videoSrc": "/assets/rpg/ui/intro/v6-showcase/element-wind.webm",
+      "videoPoster": "/assets/rpg/ui/intro/v5-medical-scenery/element-herb-garden.webp"
+    },
+    {
+      "id": "earth",
+      "name": "땅",
+      "symbol": "土",
+      "accent": "#ad8953",
+      "description": "지면의 균열·충격·방벽을 결합하는 방어와 파쇄 계열.",
+      "icon": "/assets/rpg/skills/icons/lk-custom/014.png",
+      "skillName": "대지 균열",
+      "skillDescription": "대지를 갈라 적을 공격하고 균열 표식을 남깁니다.",
+      "skillId": "lk-custom-014",
+      "growthNodeId": "earth-014",
+      "castMode": "manual",
+      "sprite": {
+        "src": "/assets/intro-sprites/c1f4c4dc39bb3d18d5547212-256-r1.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 9,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 40,
+        "displayWidth": 180,
+        "durationMs": 360,
+        "direction": "ne",
+        "originX": 128,
+        "originY": 239,
+        "motion": "cast",
+        "action": "normal",
+        "logicalBody": "100",
+        "visualBody": "300",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      },
+      "effect": {
+        "src": "/assets/rpg/skills/effects/chain-generated/r2/earth-fissure/variants-transparent/00.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 16,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 80,
+        "durationMs": 1280,
+        "originX": 128,
+        "originY": 240,
+        "displayWidth": 76,
+        "variantIndex": 0,
+        "effectId": "rpg-chain-earth-fissure-r2",
+        "anchor": "target",
+        "introDemoAnchor": "target",
+        "placementType": "attack_foot_rise",
+        "scalePercent": 160,
+        "offsetX": 0,
+        "offsetY": 0,
+        "playback": "once"
+      },
+      "effectStartMs": 0,
+      "effectDurationMs": 1280,
+      "castDurationMs": 360,
+      "skills": [
+        {
+          "id": "lk-custom-014",
+          "growthNodeId": "earth-014",
+          "name": "대지 균열",
+          "description": "대지를 갈라 적을 공격하고 균열 표식을 남깁니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/014.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/earth-fissure/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-earth-fissure-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_foot_rise",
+            "scalePercent": 160,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [],
+          "links": []
+        },
+        {
+          "id": "lk-custom-053",
+          "growthNodeId": "earth-053",
+          "name": "망치 충격",
+          "description": "충격으로 적을 공격하고 대지 연계를 이어갑니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/053.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/hammer-impact/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-hammer-impact-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_foot_rise",
+            "scalePercent": 160,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [
+            "earth-014"
+          ],
+          "links": [
+            {
+              "id": "earth-followup-1",
+              "type": "followup",
+              "fromNodeId": "earth-014",
+              "toNodeId": "earth-053",
+              "requiresStatus": "",
+              "consumeStatus": false,
+              "result": "후속 시전 연결",
+              "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+              "schoolId": "earth",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        },
+        {
+          "id": "lk-custom-114",
+          "growthNodeId": "earth-114",
+          "name": "대지 장벽",
+          "description": "바위를 솟게 해 주변 적을 공격합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/114.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/earth-barrier/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-earth-barrier-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "status_foot_rise",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "core",
+          "prerequisites": [
+            "earth-053"
+          ],
+          "links": [
+            {
+              "id": "earth-status-1",
+              "type": "status",
+              "fromNodeId": "earth-014",
+              "toNodeId": "earth-114",
+              "requiresStatus": "fracture",
+              "consumeStatus": true,
+              "result": "상태를 소모하여 마무리 강화",
+              "description": "편성한 스킬이 자신이 남긴 유효한 표식을 연결합니다. 소비형 연계는 발동할 때 해당 표식을 사용합니다.",
+              "schoolId": "earth",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            },
+            {
+              "id": "earth-followup-2",
+              "type": "followup",
+              "fromNodeId": "earth-053",
+              "toNodeId": "earth-114",
+              "requiresStatus": "",
+              "consumeStatus": false,
+              "result": "주스킬 연속 시전",
+              "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+              "schoolId": "earth",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        },
+        {
+          "id": "lk-custom-044",
+          "growthNodeId": "earth-044",
+          "name": "방어력 감소",
+          "description": "적에게 균열 표식을 남기고 방어를 약화합니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/044.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/armor-break/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 128,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-armor-break-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "status_overhead",
+            "scalePercent": 130,
+            "offsetX": 0,
+            "offsetY": -150,
+            "playback": "once"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "enhancement",
+          "prerequisites": [
+            "earth-014"
+          ],
+          "links": []
+        },
+        {
+          "id": "lk-custom-034",
+          "growthNodeId": "earth-034",
+          "name": "방어력 강화",
+          "description": "일정 시간 피해를 흡수하는 보호막을 얻습니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/034.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/defense-up/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-defense-up-r2",
+            "anchor": "caster",
+            "introDemoAnchor": "target",
+            "placementType": "status_body_aura",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "manual",
+          "role": "support",
+          "prerequisites": [
+            "earth-044"
+          ],
+          "links": []
+        },
+        {
+          "id": "lk-custom-066",
+          "growthNodeId": "earth-066",
+          "name": "모래 폭풍",
+          "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 MP와 재사용 조건에 따라 자동 발동하는 마무리 기술입니다.",
+          "icon": "/assets/rpg/skills/icons/lk-custom/066.png",
+          "effect": {
+            "src": "/assets/rpg/skills/effects/chain-generated/r2/sand-storm/variants-transparent/00.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 16,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 80,
+            "durationMs": 1280,
+            "originX": 128,
+            "originY": 240,
+            "displayWidth": 76,
+            "variantIndex": 0,
+            "effectId": "rpg-chain-sand-storm-r2",
+            "anchor": "target",
+            "introDemoAnchor": "target",
+            "placementType": "attack_foot_rise",
+            "scalePercent": 150,
+            "offsetX": 0,
+            "offsetY": 0,
+            "playback": "loop"
+          },
+          "effectStartMs": 0,
+          "effectDurationMs": 1280,
+          "castDurationMs": 360,
+          "castMode": "automatic",
+          "role": "ultimate",
+          "prerequisites": [
+            "earth-114"
+          ],
+          "links": [
+            {
+              "id": "earth-awakening",
+              "type": "status",
+              "fromNodeId": "earth-014",
+              "toNodeId": "earth-066",
+              "requiresStatus": "fracture",
+              "consumeStatus": false,
+              "result": "각성 마무리 증폭",
+              "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 조건을 충족한 궁극이 자동 발동합니다.",
+              "schoolId": "earth",
+              "windowMs": 6000,
+              "damageBonusRatio": 0.2
+            }
+          ]
+        }
+      ],
+      "defaultSkillIndex": 0,
+      "links": [
+        {
+          "id": "earth-followup-1",
+          "type": "followup",
+          "fromNodeId": "earth-014",
+          "toNodeId": "earth-053",
+          "requiresStatus": "",
+          "consumeStatus": false,
+          "result": "후속 시전 연결",
+          "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+          "schoolId": "earth",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "earth-status-1",
+          "type": "status",
+          "fromNodeId": "earth-014",
+          "toNodeId": "earth-114",
+          "requiresStatus": "fracture",
+          "consumeStatus": true,
+          "result": "상태를 소모하여 마무리 강화",
+          "description": "편성한 스킬이 자신이 남긴 유효한 표식을 연결합니다. 소비형 연계는 발동할 때 해당 표식을 사용합니다.",
+          "schoolId": "earth",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "earth-followup-2",
+          "type": "followup",
+          "fromNodeId": "earth-053",
+          "toNodeId": "earth-114",
+          "requiresStatus": "",
+          "consumeStatus": false,
+          "result": "주스킬 연속 시전",
+          "description": "편성한 주스킬의 시전 순서와 최근 6초의 기록을 서버가 확인해 후속 연계를 적용합니다.",
+          "schoolId": "earth",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        },
+        {
+          "id": "earth-awakening",
+          "type": "status",
+          "fromNodeId": "earth-014",
+          "toNodeId": "earth-066",
+          "requiresStatus": "fracture",
+          "consumeStatus": false,
+          "result": "각성 마무리 증폭",
+          "description": "같은 속성 주스킬 3개를 6초 안에 각각 시전하면 조건을 충족한 궁극이 자동 발동합니다.",
+          "schoolId": "earth",
+          "windowMs": 6000,
+          "damageBonusRatio": 0.2
+        }
+      ],
+      "videoSrc": "/assets/rpg/ui/intro/v6-showcase/element-earth.webm",
+      "videoPoster": "/assets/rpg/ui/intro/v5-medical-scenery/element-herb-garden.webp"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "media-01",
+      "name": "함께 떠나는 첫걸음",
+      "description": "진료를 마친 두 의료진, 낯선 마을에서 다음 모험을 약속합니다.",
+      "image": "/assets/rpg/ui/intro/v1/world-captures/v2/play-namhae3-r35f-300-400.webp",
+      "tag": "GALLERY",
+      "originalImage": "/assets/rpg/ui/intro/v1/world-captures/v2/play-namhae3-r35f-300-400-source.png",
+      "caption": "실제 새남해3 R35f · 300·400 의료진의 예시 대화",
+      "alt": "새남해3 남해읍에서 300·400 의료진이 두 말풍선으로 대화하는 실제 의맥전기 플레이 화면",
+      "gameplayCapture": true,
+      "title": "함께 떠나는 첫걸음",
+      "eyebrow": "PLAY",
+      "type": "image"
+    },
+    {
+      "id": "media-02",
+      "name": "전투의 순간",
+      "description": "나만의 장비와 스킬로 펼치는 실시간 전투.",
+      "image": "/assets/rpg/ui/generated-previews/16-battle-clinic-action-center-20260628.webp",
+      "tag": "GALLERY",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+        "kind": "portrait",
+        "side": "right"
+      },
+      "actionId": "play",
+      "title": "전투의 순간",
+      "eyebrow": "BATTLE",
+      "href": "/play",
+      "label": "게임 시작",
+      "type": "image"
+    },
+    {
+      "id": "media-03",
+      "name": "봄을 걷다",
+      "description": "이동면의 푸른 풍경에서 새로운 길을 발견하세요.",
+      "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/idong-spring-concept.webp",
+      "tag": "GALLERY",
+      "title": "봄을 걷다",
+      "eyebrow": "SPRING",
+      "type": "image"
+    },
+    {
+      "id": "media-04",
+      "name": "여름의 바다",
+      "description": "미조의 해안과 마을을 지나 다음 모험으로.",
+      "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/mijo-summer-concept.webp",
+      "tag": "GALLERY",
+      "title": "여름의 바다",
+      "eyebrow": "SUMMER",
+      "type": "image"
+    },
+    {
+      "id": "media-05",
+      "name": "겨울의 숨결",
+      "description": "설천의 겨울 풍경 너머 새로운 도전을 만나세요.",
+      "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/seolcheon-winter-concept.webp",
+      "tag": "GALLERY",
+      "title": "겨울의 숨결",
+      "eyebrow": "WINTER",
+      "type": "image"
+    },
+    {
+      "id": "media-06",
+      "name": "진료실의 일상",
+      "description": "진료실 현황과 치료 흐름을 게임 속에서 함께 살펴보세요.",
+      "image": "/assets/rpg/ui/generated-previews/18-clinic-operations-center-20260628.webp",
+      "tag": "GALLERY",
+      "foreground": {
+        "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n002.webp",
+        "kind": "npc",
+        "side": "right"
+      },
+      "actionId": "clinic",
+      "title": "진료실의 일상",
+      "eyebrow": "CLINIC",
+      "href": "/rpg/clinic",
+      "label": "진료실 열기",
+      "type": "image"
+    }
+  ],
+  "guide": {
+    "protagonist": {
+      "image": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+      "alt": "의맥전기 남성 주인공의 단독 원화"
+    },
+    "stories": [
+      {
+        "id": "first-adventure",
+        "name": "당신의 첫 모험",
+        "description": "서버를 선택하고 나만의 의료진과 함께 첫 장을 열어보세요.",
+        "image": "/assets/rpg/ui/generated-previews/20-full-game-brand-hero-center-20260628.webp",
+        "tag": "ADVENTURE GUIDE",
+        "actionId": "play",
+        "title": "당신의 첫 모험",
+        "eyebrow": "ADVENTURE GUIDE",
+        "href": "/play",
+        "label": "게임 시작"
+      },
+      {
+        "id": "healing-life",
+        "name": "치유로 이어지는 일상",
+        "description": "진료실과 플레이를 잇는 베드 타이머를 만나보세요.",
+        "image": "/assets/rpg/ui/generated-previews/18-clinic-operations-center-20260628.webp",
+        "tag": "CLINIC GUIDE",
+        "actionId": "clinic",
+        "title": "치유로 이어지는 일상",
+        "eyebrow": "CLINIC GUIDE",
+        "href": "/rpg/clinic",
+        "label": "진료실 열기"
+      }
+    ]
+  },
+  "sequence": [
+    {
+      "id": "healing-start",
+      "name": "치유에서 시작된 모험",
+      "description": "의맥전기의 세계로 떠나는 첫걸음.",
+      "image": "/assets/rpg/ui/generated-previews/20-full-game-brand-hero-center-20260628.webp",
+      "tag": "01",
+      "title": "치유에서 시작된 모험",
+      "eyebrow": "01",
+      "sprite": {
+        "src": "/assets/intro-sprites/a7100b6de3106967af9751bb-256-r4.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 300,
+        "displayWidth": 180,
+        "durationMs": 900,
+        "direction": "s",
+        "originX": 128,
+        "originY": 239,
+        "motion": "idle",
+        "action": "normal",
+        "logicalBody": "100",
+        "visualBody": "300",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      }
+    },
+    {
+      "id": "battle",
+      "name": "나만의 전투",
+      "description": "의료진과 몬스터가 만나는 모험의 순간.",
+      "image": "/assets/rpg/ui/generated-previews/16-battle-clinic-action-center-20260628.webp",
+      "tag": "02",
+      "title": "나만의 전투",
+      "eyebrow": "02",
+      "sprite": {
+        "src": "/assets/intro-sprites/bb7704147b3d4a35bb1615b1-128-r4.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 150,
+        "displayWidth": 180,
+        "durationMs": 450,
+        "direction": "s",
+        "originX": 64,
+        "originY": 112,
+        "motion": "walk",
+        "action": "normal"
+      }
+    },
+    {
+      "id": "together",
+      "name": "함께 걷는 세계",
+      "description": "사계절의 마을에서 새로운 동료를 만나세요.",
+      "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/idong-spring-concept.webp",
+      "tag": "03",
+      "title": "함께 걷는 세계",
+      "eyebrow": "03",
+      "sprite": {
+        "src": "/assets/intro-sprites/b706c75b732e58b86154bedf-256-r4.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 300,
+        "displayWidth": 180,
+        "durationMs": 900,
+        "direction": "s",
+        "originX": 128,
+        "originY": 239,
+        "motion": "idle",
+        "action": "normal",
+        "logicalBody": "200",
+        "visualBody": "400",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      }
+    },
+    {
+      "id": "healing-time",
+      "name": "다시, 치유의 시간",
+      "description": "진료실과 모험을 잇는 나만의 이야기.",
+      "image": "/assets/rpg/ui/generated-previews/18-clinic-operations-center-20260628.webp",
+      "tag": "04",
+      "title": "다시, 치유의 시간",
+      "eyebrow": "04",
+      "sprite": {
+        "src": "/assets/intro-sprites/ec1e0887e2708158682c72a6-256-r1.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 12,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 200,
+        "displayWidth": 230,
+        "durationMs": 2400,
+        "direction": "ne",
+        "originX": 128,
+        "originY": 239,
+        "motion": "medical",
+        "action": "drink_herbal_pouch",
+        "logicalBody": "200",
+        "visualBody": "400",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      }
+    }
+  ],
+  "heroSprites": [
+    {
+      "name": "남성 의료진",
+      "title": "남성 의료진",
+      "eyebrow": "의료진",
+      "tag": "의료진",
+      "description": "치유와 모험의 길을 함께 걷는 의맥전기의 의료진.",
+      "image": "/assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/idle/normal/s_00.png",
+      "id": "medical-male",
+      "role": "의료진",
+      "portrait": "/assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/idle/normal/s_00.png",
+      "displayMode": "sprite",
+      "spriteImage": "/assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/idle/normal/s_00.png",
+      "sprite": {
+        "src": "/assets/intro-sprites/a7100b6de3106967af9751bb-256-r4.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 300,
+        "displayWidth": 180,
+        "durationMs": 900,
+        "direction": "s",
+        "originX": 128,
+        "originY": 239,
+        "motion": "idle",
+        "action": "normal",
+        "logicalBody": "100",
+        "visualBody": "300",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/c8a0a4468e14755cbd5e08ab-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 300,
+            "displayWidth": 180,
+            "durationMs": 900,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "idle",
+            "action": "normal",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": true
+          },
+          "tools": [
+            {
+              "sprite": {
+                "src": "/assets/intro-sprites/fddd568b5126d02c5a540147-256-r4.png",
+                "frameWidth": 256,
+                "frameHeight": 256,
+                "frames": 3,
+                "rows": 1,
+                "row": 0,
+                "frameMs": 300,
+                "displayWidth": 180,
+                "durationMs": 900,
+                "direction": "s",
+                "originX": 128,
+                "originY": 239,
+                "motion": "idle",
+                "action": "identity-idle-walk-20260909-r1-100-idle-throw",
+                "logicalBody": "100",
+                "visualBody": "300",
+                "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+                "loop": true,
+                "toolId": "throw",
+                "selectedSheet": "sheets/weapon-visibility-20260914-r1/base/12-100-idle-normal-throw.png",
+                "clock": "body",
+                "sourceDurationMs": 900
+              },
+              "placements": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                }
+              ]
+            }
+          ]
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/8280b603c90bb36d550360d2-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 9,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 35.55555555555556,
+            "displayWidth": 180,
+            "durationMs": 320,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "attack",
+            "action": "sword",
+            "logicalBody": "100",
+            "visualBody": "300",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": false
+          },
+          "tools": [
+            {
+              "sprite": {
+                "src": "/assets/intro-sprites/2f7b9800034049bb1a911121-256-r4.png",
+                "frameWidth": 256,
+                "frameHeight": 256,
+                "frames": 9,
+                "rows": 1,
+                "row": 0,
+                "frameMs": 35.55555555555556,
+                "displayWidth": 180,
+                "durationMs": 320,
+                "direction": "s",
+                "originX": 128,
+                "originY": 239,
+                "motion": "attack",
+                "action": "identity-combat-care-20260912-r1-100-throw",
+                "logicalBody": "100",
+                "visualBody": "300",
+                "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+                "loop": false,
+                "toolId": "throw",
+                "selectedSheet": "sheets/weapon-visibility-20260914-r1/base/06-100-attack-sword-throw.png",
+                "clock": "body",
+                "sourceDurationMs": 720
+              },
+              "placements": [
+                {
+                  "x": 0,
+                  "y": -3,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": -14,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "여성 의료진",
+      "title": "여성 의료진",
+      "eyebrow": "의료진",
+      "tag": "의료진",
+      "description": "환자를 돌보는 손길로 새로운 세계를 탐험합니다.",
+      "image": "/assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/400/idle/normal/s_00.png",
+      "id": "medical-female",
+      "role": "의료진",
+      "portrait": "/assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/400/idle/normal/s_00.png",
+      "displayMode": "sprite",
+      "spriteImage": "/assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/400/idle/normal/s_00.png",
+      "sprite": {
+        "src": "/assets/intro-sprites/b706c75b732e58b86154bedf-256-r4.png",
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "frames": 3,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 300,
+        "displayWidth": 180,
+        "durationMs": 900,
+        "direction": "s",
+        "originX": 128,
+        "originY": 239,
+        "motion": "idle",
+        "action": "normal",
+        "logicalBody": "200",
+        "visualBody": "400",
+        "appearanceRelease": "lk-medical-3d-look-20261018-r3"
+      },
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/60c3e1ee747410741e191e91-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 3,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 300,
+            "displayWidth": 180,
+            "durationMs": 900,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "idle",
+            "action": "normal",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": true
+          },
+          "tools": [
+            {
+              "sprite": {
+                "src": "/assets/intro-sprites/79d46bf08722ea20fa56874e-256-r4.png",
+                "frameWidth": 256,
+                "frameHeight": 256,
+                "frames": 3,
+                "rows": 1,
+                "row": 0,
+                "frameMs": 300,
+                "displayWidth": 180,
+                "durationMs": 900,
+                "direction": "s",
+                "originX": 128,
+                "originY": 239,
+                "motion": "idle",
+                "action": "identity-idle-walk-20260909-r1-200-idle-attack-axe",
+                "logicalBody": "200",
+                "visualBody": "400",
+                "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+                "loop": true,
+                "toolId": "attack-axe",
+                "selectedSheet": "sheets/weapon-direction-20260919-r5/base/200-idle-normal-attack-axe.png",
+                "clock": "body",
+                "sourceDurationMs": 900
+              },
+              "placements": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                }
+              ]
+            }
+          ]
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/34f29d70e43ce7948bf29945-256-r4.png",
+            "frameWidth": 256,
+            "frameHeight": 256,
+            "frames": 8,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 40,
+            "displayWidth": 180,
+            "durationMs": 320,
+            "direction": "s",
+            "originX": 128,
+            "originY": 239,
+            "motion": "attack",
+            "action": "attack-axe",
+            "logicalBody": "200",
+            "visualBody": "400",
+            "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+            "loop": false
+          },
+          "tools": [
+            {
+              "sprite": {
+                "src": "/assets/intro-sprites/76b0db7f4c14e9817e7a334b-256-r4.png",
+                "frameWidth": 256,
+                "frameHeight": 256,
+                "frames": 8,
+                "rows": 1,
+                "row": 0,
+                "frameMs": 40,
+                "displayWidth": 180,
+                "durationMs": 320,
+                "direction": "s",
+                "originX": 128,
+                "originY": 239,
+                "motion": "attack",
+                "action": "identity-combat-care-20260912-r1-200-attack-axe",
+                "logicalBody": "200",
+                "visualBody": "400",
+                "appearanceRelease": "lk-medical-3d-look-20261018-r3",
+                "loop": false,
+                "toolId": "attack-axe",
+                "selectedSheet": "sheets/weapon-direction-20260919-r5/base/200-attack-attack-axe-attack-axe.png",
+                "clock": "body",
+                "sourceDurationMs": 720
+              },
+              "placements": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": -14,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": -10,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                },
+                {
+                  "x": 0,
+                  "y": 0,
+                  "rotationDeg": 0,
+                  "layer": "front"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "고원 바람악마",
+      "title": "고원 바람악마",
+      "eyebrow": "몬스터",
+      "tag": "몬스터",
+      "description": "맑은 바람을 두른 고원 정령의 아종 콘셉트.",
+      "image": "/assets/rpg/monsters/sprites/M936/walk/normal/s_00.png",
+      "id": "M936",
+      "role": "몬스터",
+      "portrait": "/assets/rpg/monsters/sprites/M936/walk/normal/s_00.png",
+      "sprite": {
+        "src": "/assets/intro-sprites/84d37584c8a74c01146880f3-128-r4.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frames": 5,
+        "rows": 1,
+        "row": 0,
+        "frameMs": 150,
+        "displayWidth": 180,
+        "durationMs": 750,
+        "direction": "s",
+        "originX": 64,
+        "originY": 112,
+        "motion": "walk",
+        "action": "normal"
+      },
+      "sourceMonsterId": "M226-R4",
+      "revision": "pose-polish-r2-lk-3d-render-470ba5274569-1310e0421a76",
+      "regionName": "창선면",
+      "candidateOnly": true,
+      "gameplayApplied": false,
+      "introOnly": true,
+      "encounter": {
+        "idle": {
+          "sprite": {
+            "src": "/assets/intro-sprites/84d37584c8a74c01146880f3-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "walk",
+            "action": "normal",
+            "staticFrame": 2,
+            "loop": false
+          },
+          "tools": []
+        },
+        "hover": {
+          "sprite": {
+            "src": "/assets/intro-sprites/388e347bbe6bd61347d462fe-128-r4.png",
+            "frameWidth": 128,
+            "frameHeight": 128,
+            "frames": 5,
+            "rows": 1,
+            "row": 0,
+            "frameMs": 150,
+            "displayWidth": 180,
+            "durationMs": 750,
+            "direction": "s",
+            "originX": 64,
+            "originY": 112,
+            "motion": "attack",
+            "action": "normal",
+            "loop": false
+          },
+          "tools": []
+        }
+      }
+    }
+  ],
+  "ambientSrc": "/assets/rpg/sounds/providers/1000y/audio/환경/환경_숲새소리1_10001.wav",
+  "characterScene": {
+    "background": "/assets/rpg/worlds/namhae-renewal-3d-3/review/concept-r14-distinct-villages/idong-myeon-concept.webp",
+    "width": 1600,
+    "height": 900
+  },
+  "site": {
+    "schemaVersion": 5,
+    "revision": "intro-authored-sections-20261022-r1",
+    "sectionOrder": [
+      "visual",
+      "universe",
+      "character",
+      "features",
+      "gamefeatures",
+      "sect",
+      "skill",
+      "clinic",
+      "guide",
+      "media",
+      "access"
+    ],
+    "metadata": {
+      "title": "의맥전기 · 치유의 인연, 전설의 시작",
+      "description": "치유의 인연으로 이어지는 새로운 전설. 의맥전기에서 모험과 전투, 동료와 함께하는 이야기를 만나세요.",
+      "themeColor": "#141c32",
+      "language": "ko"
+    },
+    "brand": {
+      "name": "의맥전기",
+      "subtitle": "치유의 손끝에서, 새로운 모험이 시작된다",
+      "logo": "/assets/rpg/ui/intro/v1/logo-calligraphy-white.webp",
+      "subtitleImage": "/assets/rpg/ui/branding/uimaek-jeongi-action-hybrid-subtitle-white.png",
+      "primary": "의맥",
+      "secondary": "전기",
+      "hanja": "醫脈傳奇",
+      "serviceLabel": "PVP RPG"
+    },
+    "actions": {
+      "play": {
+        "href": "/play",
+        "label": "게임 시작",
+        "method": "GET",
+        "demoMessage": "준비 중입니다."
+      },
+      "login": {
+        "href": "/play",
+        "label": "로그인",
+        "method": "GET",
+        "demoMessage": "준비 중입니다."
+      },
+      "clinic": {
+        "href": "/rpg/clinic",
+        "label": "진료실 열기",
+        "method": "GET",
+        "demoMessage": "준비 중입니다."
+      },
+      "staffBoard": {
+        "href": "/rpg/staff-board",
+        "label": "현황판 보기",
+        "method": "GET",
+        "demoMessage": "준비 중입니다."
+      },
+      "logout": {
+        "href": "/play/logout",
+        "label": "로그아웃",
+        "method": "POST",
+        "demoMessage": "준비 중입니다."
+      },
+      "admin": {
+        "href": "/rpg/admin",
+        "label": "관리자 도구",
+        "method": "GET",
+        "demoMessage": "준비 중입니다.",
+        "visibility": "operator"
+      }
+    },
+    "navigation": [
+      {
+        "id": "universe",
+        "label": "세계관",
+        "kind": "carousel",
+        "carousel": "universe",
+        "source": "universe",
+        "entries": [
+          {
+            "name": "함께 떠나는 첫걸음",
+            "id": "first-step"
+          },
+          {
+            "name": "봄을 걷다",
+            "id": "spring"
+          },
+          {
+            "name": "여름의 바다",
+            "id": "summer"
+          },
+          {
+            "name": "가을의 여정",
+            "id": "autumn"
+          },
+          {
+            "name": "겨울의 숨결",
+            "id": "winter"
+          }
+        ]
+      },
+      {
+        "id": "character",
+        "label": "인연",
+        "kind": "actors",
+        "entries": [
+          {
+            "name": "마을의 인연",
+            "value": "actors"
+          },
+          {
+            "name": "몬스터 아종",
+            "value": "monsters"
+          }
+        ]
+      },
+      {
+        "id": "features",
+        "label": "게임특징",
+        "kind": "carousel",
+        "carousel": "features",
+        "source": "features",
+        "entries": [
+          {
+            "name": "전투의 순간",
+            "id": "battle"
+          },
+          {
+            "name": "치유와 성장",
+            "id": "healing"
+          },
+          {
+            "name": "준비하는 즐거움",
+            "id": "equipment"
+          },
+          {
+            "name": "함께하는 세계",
+            "id": "together"
+          },
+          {
+            "name": "진료실의 일상",
+            "id": "clinic-life"
+          }
+        ]
+      },
+      {
+        "id": "gamefeatures",
+        "label": "의술",
+        "kind": "medical",
+        "source": "medical.skills",
+        "entries": [
+          {
+            "name": "침",
+            "id": "lk-clinic-004"
+          },
+          {
+            "name": "약침",
+            "id": "lk-clinic-005"
+          },
+          {
+            "name": "도침",
+            "id": "lk-clinic-006"
+          },
+          {
+            "name": "추나",
+            "id": "lk-clinic-007"
+          },
+          {
+            "name": "초음파",
+            "id": "lk-clinic-012"
+          },
+          {
+            "name": "한약",
+            "id": "lk-clinic-019"
+          },
+          {
+            "name": "물치",
+            "id": "lk-clinic-001"
+          },
+          {
+            "name": "테이핑",
+            "id": "lk-clinic-013"
+          }
+        ]
+      },
+      {
+        "id": "sect",
+        "label": "동료",
+        "kind": "carousel",
+        "carousel": "guild",
+        "source": "guild",
+        "entries": [
+          {
+            "name": "파티",
+            "id": "party"
+          },
+          {
+            "name": "길드",
+            "id": "guild"
+          },
+          {
+            "name": "공성·길드전",
+            "id": "siege"
+          }
+        ]
+      },
+      {
+        "id": "skill",
+        "label": "원소",
+        "kind": "elements",
+        "source": "elements",
+        "entries": [
+          {
+            "name": "불",
+            "id": "fire"
+          },
+          {
+            "name": "물",
+            "id": "water"
+          },
+          {
+            "name": "바람",
+            "id": "wind"
+          },
+          {
+            "name": "땅",
+            "id": "earth"
+          }
+        ]
+      },
+      {
+        "id": "clinic",
+        "label": "진료실",
+        "kind": "links",
+        "entries": [
+          {
+            "name": "진료실 소개",
+            "target": "clinic",
+            "href": "#clinic"
+          },
+          {
+            "name": "진료실 열기",
+            "actionId": "clinic",
+            "href": "/rpg/clinic",
+            "label": "진료실 열기"
+          },
+          {
+            "name": "현황판 보기",
+            "actionId": "staffBoard",
+            "href": "/rpg/staff-board",
+            "label": "현황판 보기"
+          }
+        ]
+      },
+      {
+        "id": "guide",
+        "label": "가이드",
+        "kind": "links",
+        "entries": [
+          {
+            "name": "첫걸음 안내",
+            "target": "guide",
+            "href": "#guide"
+          },
+          {
+            "name": "게임 시작",
+            "actionId": "play",
+            "href": "/play",
+            "label": "게임 시작"
+          }
+        ]
+      },
+      {
+        "id": "media",
+        "label": "미디어",
+        "kind": "carousel",
+        "carousel": "media",
+        "source": "gallery",
+        "entries": [
+          {
+            "name": "함께 떠나는 첫걸음",
+            "id": "media-01"
+          },
+          {
+            "name": "전투의 순간",
+            "id": "media-02"
+          },
+          {
+            "name": "봄을 걷다",
+            "id": "media-03"
+          },
+          {
+            "name": "여름의 바다",
+            "id": "media-04"
+          },
+          {
+            "name": "겨울의 숨결",
+            "id": "media-05"
+          },
+          {
+            "name": "진료실의 일상",
+            "id": "media-06"
+          }
+        ]
+      }
+    ],
+    "serviceBar": {
+      "tagline": "함께 만드는 또 하나의 세계",
+      "loginLabel": "로그인",
+      "loggedInLabel": "내 모험으로 돌아가기"
+    },
+    "footer": {
+      "description": "치유의 인연, 전설의 시작 · PVP RPG LIVE",
+      "copyright": "© PVP RPG. All rights reserved.",
+      "actionIds": [
+        "play",
+        "clinic",
+        "staffBoard",
+        "admin"
+      ]
+    },
+    "theme": {
+      "default": "night",
+      "toDayLabel": "낮 풍경으로 변경",
+      "toNightLabel": "밤 풍경으로 변경"
+    },
+    "audio": {
+      "ambientSrc": "/assets/rpg/sounds/providers/1000y/audio/환경/환경_숲새소리1_10001.wav"
+    },
+    "copy": {
+      "drawerLead": "우리의 이야기가 전설이 되는 곳",
+      "drawerStart": "모험 시작하기",
+      "navOverview": "전체 소개",
+      "backToTop": "맨 위로",
+      "demoNotice": "준비 중입니다."
+    }
+  },
+  "sections": {
+    "access": {
+      "schemaVersion": 5,
+      "id": "access",
+      "heading": {
+        "number": "",
+        "eyebrow": "A NEW CHAPTER AWAITS",
+        "title": "새로운 인연이\n당신을 기다립니다",
+        "description": "설치 없이, 브라우저에서 시작하는 우리들의 RPG."
+      },
+      "background": "/assets/rpg/ui/intro/v5-medical-scenery/clinic-morning-gate.webp",
+      "assets": {},
+      "copy": {},
+      "actions": [
+        {
+          "actionId": "play",
+          "label": "지금 모험 시작하기",
+          "href": "/play"
+        }
+      ]
+    },
+    "character": {
+      "schemaVersion": 5,
+      "id": "character",
+      "heading": {
+        "number": "02",
+        "eyebrow": "FATE & FRIENDS",
+        "title": "우연에서 시작되는 인연",
+        "description": "치유의 손길을 나누는 동료, 그리고 모험의 길에서 마주할 존재들."
+      },
+      "background": "/assets/rpg/worlds/namhae-renewal-3d-3/review/concept-r14-distinct-villages/idong-myeon-concept.webp",
+      "assets": {},
+      "copy": {
+        "villageLabel": "마을의 인연",
+        "monsterLabel": "몬스터 아종",
+        "villageCaption": "인연이 머무는 작은 마을",
+        "villageEyebrow": "MEET THE VILLAGERS",
+        "exploreLabel": "마을 둘러보기. 작은 화면에서는 가로로 이동할 수 있습니다.",
+        "portraitHint": "인물을 선택하면 이야기를 만날 수 있어요."
+      },
+      "actions": [],
+      "actorCopy": {
+        "medical-male": {
+          "description": "치유와 모험의 길을 함께 걷는 의맥전기의 의료진.",
+          "role": "의료진",
+          "name": "남성 의료진",
+          "image": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+          "portrait": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp"
+        },
+        "medical-female": {
+          "description": "환자를 돌보는 손길로 새로운 세계를 탐험합니다.",
+          "role": "의료진",
+          "name": "여성 의료진",
+          "image": "/assets/rpg/ui/intro/v1/portrait-medical-female.webp",
+          "portrait": "/assets/rpg/ui/intro/v1/portrait-medical-female.webp"
+        },
+        "portrait-n001": {
+          "description": "새로운 여행자의 첫걸음을 함께하는 아놀드.",
+          "role": "모험의 길잡이"
+        },
+        "portrait-n002": {
+          "description": "마을의 진료실에서 모험가를 맞이하는 간호사.",
+          "role": "치료와 회복"
+        },
+        "portrait-n006": {
+          "description": "다음 모험에 필요한 물품을 준비하는 잡상인.",
+          "role": "마을의 상인"
+        },
+        "portrait-n007": {
+          "description": "모험의 든든한 준비를 돕는 대장장이.",
+          "role": "장비와 제작"
+        },
+        "portrait-n017": {
+          "description": "동료와 함께할 길을 안내하는 길드마스터.",
+          "role": "길드의 안내자"
+        },
+        "portrait-n020": {
+          "description": "모험가와 마을을 이어주는 건물관리인.",
+          "role": "마을의 관리자"
+        }
+      }
+    },
+    "clinic": {
+      "schemaVersion": 5,
+      "id": "clinic",
+      "heading": {
+        "number": "07",
+        "eyebrow": "TIME TO HEAL",
+        "title": "치유의 시간을 한눈에",
+        "description": "모험을 즐기는 순간에도, 우리의 진료는 이어집니다."
+      },
+      "background": "/assets/rpg/ui/intro/v1/clinic-calls/v1/clinic-call-scene-r1.webp",
+      "assets": {
+        "capture": "/assets/rpg/ui/intro/v1/clinic-captures/play-v2/play-clinic-300-front.webp"
+      },
+      "copy": {
+        "captureAlt": "남성 의료진이 정면을 바라보는 실제 의맥전기 플레이와 왼쪽 위에 연동된 진행 중·일시정지·대기 베드의 진료 타이머",
+        "captureAriaLabel": "플레이와 연결된 진료 타이머 화면 크게 보기",
+        "caption": "모험과 함께 흐르는 진료의 시간",
+        "captionDetail": "실제 PLAY · 좌상단 진료 연동",
+        "note": "진료실과 연동된 실제 플레이 화면 · 예시 데이터 촬영",
+        "expandNote": "이미지를 누르면 크게 볼 수 있어요.",
+        "zoomLabel": "크게 보기 ↗"
+      },
+      "actions": [
+        {
+          "actionId": "clinic",
+          "href": "/rpg/clinic",
+          "label": "진료실 열기"
+        },
+        {
+          "actionId": "staffBoard",
+          "href": "/rpg/staff-board",
+          "label": "현황판 보기"
+        }
+      ]
+    },
+    "features": {
+      "schemaVersion": 5,
+      "id": "features",
+      "heading": {
+        "number": "03",
+        "eyebrow": "THE WORLD WE SHARE",
+        "title": "모험의 모든 순간을 함께",
+        "description": "전투와 성장, 동료와 진료까지. 의맥전기에서 이어지는 다섯 가지 이야기."
+      },
+      "background": "/assets/rpg/ui/intro/v5-medical-scenery/healing-courtyard.webp",
+      "assets": {},
+      "copy": {},
+      "actions": [],
+      "items": [
+        {
+          "id": "battle",
+          "name": "전투의 순간",
+          "description": "나만의 장비와 스킬로 펼치는 실시간 전투.",
+          "image": "/assets/rpg/ui/generated-previews/16-battle-clinic-action-center-20260628.webp",
+          "tag": "BATTLE",
+          "foreground": {
+            "image": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+            "kind": "portrait",
+            "side": "right"
+          },
+          "actionId": "play"
+        },
+        {
+          "id": "healing",
+          "name": "치유와 성장",
+          "description": "의료 스킬과 회복의 흐름을 연결하는 모험.",
+          "image": "/assets/rpg/ui/entry-bg-healing-buff-left-20260628.webp",
+          "tag": "HEALING",
+          "foreground": {
+            "image": "/assets/rpg/ui/intro/v1/portrait-medical-female.webp",
+            "kind": "portrait",
+            "side": "right"
+          },
+          "actionId": "play"
+        },
+        {
+          "id": "equipment",
+          "name": "준비하는 즐거움",
+          "description": "장비와 인벤토리를 정비하고 다음 전투를 준비하세요.",
+          "image": "/assets/rpg/ui/entry-bg-inventory-prep-left-20260628.webp",
+          "tag": "EQUIPMENT",
+          "foreground": {
+            "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n007.webp",
+            "kind": "npc",
+            "side": "right"
+          },
+          "actionId": "play"
+        },
+        {
+          "id": "together",
+          "name": "함께하는 세계",
+          "description": "동료를 만나고 파티와 길드로 모험을 이어갑니다.",
+          "image": "/assets/rpg/ui/entry-bg-social-rest-chat-left-20260628.webp",
+          "tag": "TOGETHER",
+          "foreground": {
+            "image": "/assets/rpg/ui/intro/v1/hero-healers.webp",
+            "kind": "pair",
+            "side": "right"
+          },
+          "actionId": "play"
+        },
+        {
+          "id": "clinic-life",
+          "name": "진료실의 일상",
+          "description": "진료실 현황과 치료 흐름을 게임 속에서 함께 살펴보세요.",
+          "image": "/assets/rpg/ui/generated-previews/18-clinic-operations-center-20260628.webp",
+          "tag": "CLINIC",
+          "foreground": {
+            "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n002.webp",
+            "kind": "npc",
+            "side": "right"
+          },
+          "actionId": "clinic"
+        }
+      ]
+    },
+    "gamefeatures": {
+      "schemaVersion": 5,
+      "id": "gamefeatures",
+      "heading": {
+        "number": "04",
+        "eyebrow": "THE ART OF HEALING",
+        "title": "치유의 손끝, 빛나는 의술",
+        "description": "정성을 담은 한 수, 소중한 인연을 지키는 힘이 됩니다."
+      },
+      "background": "/assets/rpg/ui/intro/v5-medical-scenery/medical-apothecary.webp",
+      "assets": {},
+      "copy": {
+        "targetName": "허수아비",
+        "targetDescription": "의료 동작을 살펴보기 위한 남서 방향의 소개 시연 소품",
+        "demonstrationLabel": "실제 의술 모션 시연",
+        "selfModeLabel": "의료진 자신에게 시연하는 회복·강화 의술",
+        "targetModeLabel": "허수아비를 대상으로 시연하는 의술"
+      },
+      "actions": []
+    },
+    "guide": {
+      "schemaVersion": 5,
+      "id": "guide",
+      "heading": {
+        "number": "08",
+        "eyebrow": "FIRST CHAPTER",
+        "title": "첫걸음도, 함께",
+        "description": "처음 만나는 세계가 낯설지 않도록."
+      },
+      "background": "/assets/rpg/ui/intro/v5-medical-scenery/clinic-morning-gate.webp",
+      "assets": {
+        "protagonist": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp"
+      },
+      "copy": {
+        "protagonistAlt": "의맥전기 남성 주인공의 단독 원화",
+        "eyebrow": "새로운 인연을 위한 작은 안내서",
+        "title": "오늘, 우리의\n첫 장을 열어볼까요?",
+        "description": "서버를 고르고, 캐릭터를 만나고.\n첫 모험까지 한 걸음씩 함께해요.",
+        "startLabel": "의맥전기 시작하기",
+        "storyAriaLabel": "인연을 잇는 이야기"
+      },
+      "actions": [
+        {
+          "actionId": "play",
+          "label": "의맥전기 시작하기",
+          "href": "/play"
+        }
+      ],
+      "stories": [
+        {
+          "id": "first-adventure",
+          "name": "당신의 첫 모험",
+          "description": "서버를 선택하고 나만의 의료진과 함께 첫 장을 열어보세요.",
+          "image": "/assets/rpg/ui/generated-previews/20-full-game-brand-hero-center-20260628.webp",
+          "tag": "ADVENTURE GUIDE",
+          "actionId": "play"
+        },
+        {
+          "id": "healing-life",
+          "name": "치유로 이어지는 일상",
+          "description": "진료실과 플레이를 잇는 베드 타이머를 만나보세요.",
+          "image": "/assets/rpg/ui/generated-previews/18-clinic-operations-center-20260628.webp",
+          "tag": "CLINIC GUIDE",
+          "actionId": "clinic"
+        }
+      ]
+    },
+    "media": {
+      "schemaVersion": 5,
+      "id": "media",
+      "heading": {
+        "number": "09",
+        "eyebrow": "OUR MOMENTS",
+        "title": "이야기가 머무는 순간",
+        "description": ""
+      },
+      "background": "",
+      "assets": {},
+      "copy": {
+        "captionEyebrow": "THE MOMENTS OF UIMAEK",
+        "downloadLabel": "선택한 미디어 내려받기",
+        "expandLabel": "선택한 미디어 크게 보기"
+      },
+      "actions": [],
+      "items": [
+        {
+          "id": "media-01",
+          "contentRef": "universe:first-step",
+          "tag": "GALLERY",
+          "type": "image"
+        },
+        {
+          "id": "media-02",
+          "contentRef": "features:battle",
+          "tag": "GALLERY",
+          "type": "image"
+        },
+        {
+          "id": "media-03",
+          "contentRef": "universe:spring",
+          "tag": "GALLERY",
+          "type": "image"
+        },
+        {
+          "id": "media-04",
+          "contentRef": "universe:summer",
+          "tag": "GALLERY",
+          "type": "image"
+        },
+        {
+          "id": "media-05",
+          "contentRef": "universe:winter",
+          "tag": "GALLERY",
+          "type": "image"
+        },
+        {
+          "id": "media-06",
+          "contentRef": "features:clinic-life",
+          "tag": "GALLERY",
+          "type": "image"
+        }
+      ]
+    },
+    "sect": {
+      "schemaVersion": 5,
+      "id": "sect",
+      "heading": {
+        "number": "05",
+        "eyebrow": "TOGETHER",
+        "title": "혼자보다 빛나는 우리",
+        "description": "뜻을 나누고 등을 맞대면, 더 넓은 세상이 열립니다."
+      },
+      "background": "/assets/rpg/ui/entry-bg-social-rest-chat-left-20260628.webp",
+      "assets": {},
+      "copy": {},
+      "actions": [],
+      "items": [
+        {
+          "id": "party",
+          "name": "파티",
+          "description": "동료를 초대하고 경험치와 보상을 나누며 함께 성장하세요.",
+          "image": "/assets/rpg/ui/generated-previews/17-community-party-center-20260628.png",
+          "tag": "PARTY",
+          "foreground": {
+            "image": "/assets/rpg/ui/intro/v1/hero-healers.webp",
+            "kind": "pair",
+            "side": "right"
+          },
+          "actionId": "play",
+          "motionActorIds": [
+            "medical-male",
+            "medical-female"
+          ]
+        },
+        {
+          "id": "guild",
+          "name": "길드",
+          "description": "같은 목표를 향해 모이는 동료들과 나만의 이야기를 만드세요.",
+          "image": "/assets/rpg/ui/entry-bg-social-rest-chat-left-20260628.webp",
+          "tag": "GUILD",
+          "foreground": {
+            "image": "/assets/rpg/ui/intro/v1/villagers/v1/portrait-n017.webp",
+            "kind": "npc",
+            "side": "right"
+          },
+          "actionId": "play",
+          "motionActorIds": [
+            "portrait-n017"
+          ]
+        },
+        {
+          "id": "siege",
+          "name": "공성·길드전",
+          "description": "길드의 동료와 참가를 준비하고 새로운 전장에 도전하세요.",
+          "image": "/assets/rpg/ui/generated-previews/19-raid-prep-center-20260628.png",
+          "tag": "GUILD BATTLE",
+          "foreground": {
+            "image": "/assets/rpg/ui/intro/v1/portrait-medical-male.webp",
+            "kind": "portrait",
+            "side": "right"
+          },
+          "actionId": "play",
+          "motionActorIds": [
+            "medical-male",
+            "medical-female"
+          ]
+        }
+      ]
+    },
+    "skill": {
+      "schemaVersion": 5,
+      "id": "skill",
+      "heading": {
+        "number": "06",
+        "eyebrow": "AWAKEN YOUR ELEMENT",
+        "title": "당신만의 원소를 깨우다",
+        "description": "불꽃의 의지, 물결의 지혜, 바람의 자유, 대지의 굳건함."
+      },
+      "background": "/assets/rpg/ui/intro/v5-medical-scenery/element-herb-garden.webp",
+      "assets": {
+        "videoPoster": "/assets/rpg/ui/intro/v5-medical-scenery/element-herb-garden.webp",
+        "videos": {
+          "fire": "/assets/rpg/ui/intro/v6-showcase/element-fire.webm",
+          "water": "/assets/rpg/ui/intro/v6-showcase/element-water.webm",
+          "wind": "/assets/rpg/ui/intro/v6-showcase/element-wind.webm",
+          "earth": "/assets/rpg/ui/intro/v6-showcase/element-earth.webm"
+        }
+      },
+      "copy": {
+        "detailEyebrow": "원소의 비전",
+        "filmEyebrow": "의맥의 움직임",
+        "filmTitleSuffix": "실제 스킬 프레임 시연",
+        "filmWatch": "모션 감상",
+        "filmStamp": "ACTUAL SKILL MOTION",
+        "prologueLabel": "프롤로그 감상",
+        "startLabel": "나만의 원소를 만나보세요",
+        "manualCastMode": "직접 선택해 사용하는 스킬입니다.",
+        "autoCastMode": "자동으로 이어지는 스킬입니다.",
+        "passiveCastMode": "조건에 따라 적용되는 상시 효과입니다."
+      },
+      "actions": [
+        {
+          "actionId": "play",
+          "label": "나만의 원소를 만나보세요",
+          "href": "/play"
+        }
+      ]
+    },
+    "universe": {
+      "schemaVersion": 5,
+      "id": "universe",
+      "heading": {
+        "number": "01",
+        "eyebrow": "THE WORLD",
+        "title": "인연이 흐르는 세계",
+        "description": "낯선 풍경 너머, 당신을 기다리는 이야기가 있습니다."
+      },
+      "background": "/assets/rpg/ui/intro/v5-medical-scenery/healing-courtyard.webp",
+      "assets": {},
+      "copy": {},
+      "actions": [],
+      "items": [
+        {
+          "id": "first-step",
+          "name": "함께 떠나는 첫걸음",
+          "description": "진료를 마친 두 의료진, 낯선 마을에서 다음 모험을 약속합니다.",
+          "image": "/assets/rpg/ui/intro/v1/world-captures/v2/play-namhae3-r35f-300-400.webp",
+          "tag": "PLAY",
+          "originalImage": "/assets/rpg/ui/intro/v1/world-captures/v2/play-namhae3-r35f-300-400-source.png",
+          "caption": "실제 새남해3 R35f · 300·400 의료진의 예시 대화",
+          "alt": "새남해3 남해읍에서 300·400 의료진이 두 말풍선으로 대화하는 실제 의맥전기 플레이 화면",
+          "gameplayCapture": true
+        },
+        {
+          "id": "spring",
+          "name": "봄을 걷다",
+          "description": "이동면의 푸른 풍경에서 새로운 길을 발견하세요.",
+          "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/idong-spring-concept.webp",
+          "tag": "SPRING"
+        },
+        {
+          "id": "summer",
+          "name": "여름의 바다",
+          "description": "미조의 해안과 마을을 지나 다음 모험으로.",
+          "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/mijo-summer-concept.webp",
+          "tag": "SUMMER"
+        },
+        {
+          "id": "autumn",
+          "name": "가을의 여정",
+          "description": "남면의 풍경 속에서 이어지는 모험의 발걸음.",
+          "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/nam-autumn-concept.webp",
+          "tag": "AUTUMN"
+        },
+        {
+          "id": "winter",
+          "name": "겨울의 숨결",
+          "description": "설천의 겨울 풍경 너머 새로운 도전을 만나세요.",
+          "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/seolcheon-winter-concept.webp",
+          "tag": "WINTER"
+        }
+      ]
+    },
+    "visual": {
+      "schemaVersion": 5,
+      "id": "visual",
+      "heading": {
+        "number": "",
+        "eyebrow": "",
+        "title": "의맥전기",
+        "description": "치유의 손끝에서, 새로운 모험이 시작된다"
+      },
+      "background": "/assets/rpg/ui/intro/v1/hero-sky-night.webp",
+      "assets": {
+        "healers": "/assets/rpg/ui/intro/v1/hero-healers.webp",
+        "layers": {
+          "day": {
+            "sky": "/assets/rpg/ui/intro/v1/hero-sky-day.webp",
+            "stage": "/assets/rpg/ui/intro/v1/hero-stage-day.webp",
+            "front": "/assets/rpg/ui/intro/v1/hero-front-day.webp"
+          },
+          "night": {
+            "sky": "/assets/rpg/ui/intro/v1/hero-sky-night.webp",
+            "stage": "/assets/rpg/ui/intro/v1/hero-stage-night.webp",
+            "front": "/assets/rpg/ui/intro/v1/hero-front-night.webp"
+          }
+        }
+      },
+      "copy": {
+        "kicker": "치유의 인연, 전설의 시작",
+        "lead": "누군가의 손길이, 새로운 세상을 열다",
+        "playLabel": "이야기 감상하기",
+        "playAriaLabel": "의맥전기 이야기 감상",
+        "healersAlt": "의맥전기의 치유사와 모험가들",
+        "startLabel": "지금, 모험을 시작하세요",
+        "aboutLabel": "의맥전기 알아보기",
+        "storyKicker": "같은 세계, 서로 다른 인연.",
+        "storyTitleBefore": "우리의 이야기가",
+        "storyTitleEmphasis": "전설",
+        "storyTitleAfter": "이 되는 곳",
+        "storyLink": "프롤로그 감상",
+        "scrollLabel": "SCROLL DOWN"
+      },
+      "actions": [
+        {
+          "actionId": "play",
+          "label": "지금, 모험을 시작하세요",
+          "href": "/play"
+        },
+        {
+          "target": "universe",
+          "label": "의맥전기 알아보기",
+          "href": "#universe"
+        }
+      ],
+      "sequence": [
+        {
+          "id": "healing-start",
+          "name": "치유에서 시작된 모험",
+          "description": "의맥전기의 세계로 떠나는 첫걸음.",
+          "image": "/assets/rpg/ui/generated-previews/20-full-game-brand-hero-center-20260628.webp",
+          "tag": "01",
+          "spriteRef": "actor:medical-male"
+        },
+        {
+          "id": "battle",
+          "name": "나만의 전투",
+          "description": "의료진과 몬스터가 만나는 모험의 순간.",
+          "image": "/assets/rpg/ui/generated-previews/16-battle-clinic-action-center-20260628.webp",
+          "tag": "02",
+          "spriteRef": "hero:M932"
+        },
+        {
+          "id": "together",
+          "name": "함께 걷는 세계",
+          "description": "사계절의 마을에서 새로운 동료를 만나세요.",
+          "image": "/assets/rpg/worlds/namhae-renewal-3d-3/design/idong-spring-concept.webp",
+          "tag": "03",
+          "spriteRef": "actor:medical-female"
+        },
+        {
+          "id": "healing-time",
+          "name": "다시, 치유의 시간",
+          "description": "진료실과 모험을 잇는 나만의 이야기.",
+          "image": "/assets/rpg/ui/generated-previews/18-clinic-operations-center-20260628.webp",
+          "tag": "04",
+          "spriteRef": "medical:medical-019:1"
+        }
+      ],
+      "heroCopy": {
+        "M932": {
+          "description": "바람이 부는 고원에서 만나는 작은 유목 피그미의 아종 콘셉트."
+        },
+        "M926": {
+          "description": "백색 해안의 돌을 닮은 둥근 수호골렘의 아종 콘셉트."
+        },
+        "M936": {
+          "description": "맑은 바람을 두른 고원 정령의 아종 콘셉트."
+        }
+      }
+    }
+  },
+  "deployment": {
+    "mode": "demo",
+    "basePath": "/"
+  },
+  "assetBase": "/assets/"
+}
