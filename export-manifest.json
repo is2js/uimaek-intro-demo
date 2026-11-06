@@ -7,7 +7,7 @@
   "mode": "demo",
   "pagesEnabled": true,
   "spriteRowVariants": 47,
-  "assetBytes": 71612376,
+  "assetBytes": 71612547,
   "files": [
     {
       "path": ".gitattributes",
@@ -687,8 +687,8 @@
     },
     {
       "path": "assets/rpg/css/rpg-intro.css",
-      "bytes": 223573,
-      "sha256": "d080eed2d4b2edf1f8ee98aeed8ae672b98391326a8d02258a6d259cab882530",
+      "bytes": 223744,
+      "sha256": "607498108e512b62169d1c5a918f08f3406649f3daba203f93de63f7ce1b0e02",
       "source": "assets/rpg/css/rpg-intro.css",
       "sourceSha256": "3f6edab9027fa5321dac0e9fa4847704ac9f2b4f67043537957d9aa5b0f72c19"
     },
@@ -2416,7 +2416,7 @@
     {
       "path": "templates/rpg-intro.html",
       "bytes": 44291,
-      "sha256": "51216169ba759e3643d014f15bae22e4644432ee49e30a774e629c390ac62d7a",
+      "sha256": "5b43482d96383e02a5ebfbc8bb4e8132e4b1d637948e81b2a2a4e42ddfff2fc6",
       "source": "templates/rpg-intro.html"
     },
     {
