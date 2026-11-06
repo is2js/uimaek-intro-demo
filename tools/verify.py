@@ -42,12 +42,14 @@ def existing_exact(root, relative):
 
 def verify(root, output, prefix):
     prefix = base_path(prefix)
-    _, manifest = validate(root)
+    data, manifest = validate(root)
     page = (output / "index.html").read_text(encoding="utf-8")
     markup = Markup(page)
     if len(set(markup.ids)) != len(markup.ids):
         raise ValueError("Static HTML has duplicate IDs")
     expected = {"visual", "universe", "character", "features", "gamefeatures", "sect", "skill", "clinic", "guide", "media", "access"}
+    if "floorplan" in data.get("sections", {}):
+        expected.add("floorplan")
     if not expected <= set(markup.ids):
         raise ValueError("Static HTML lost a section anchor")
     if len(markup.services) < 10 or any(tag != "button" or attrs.get("type") != "button" for tag, attrs in markup.services):
@@ -63,7 +65,7 @@ def verify(root, output, prefix):
         if not parsed.path.startswith(prefix):
             raise ValueError(f"Asset escaped the configured base path: {url}")
         existing_exact(output, unquote(parsed.path[len(prefix):]))
-    for relative in ("src/rpg/intro.mjs", "src/rpg/intro-motion.mjs"):
+    for relative in ("src/rpg/intro.mjs", "src/rpg/intro-motion.mjs", "src/rpg/intro-floorplan.mjs"):
         subprocess.run(["node", "--check", str(output / relative)], check=True, capture_output=True)
     css = (output / "assets/rpg/css/rpg-intro.css").read_text(encoding="utf-8")
     for url in re.findall(r"url\(['\"]?([^)'\"]+)", css):

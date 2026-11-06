@@ -14,6 +14,7 @@ from urllib.parse import unquote, urlsplit
 from jsonschema import Draft202012Validator
 
 SECTION_IDS = ("visual", "universe", "character", "features", "gamefeatures", "sect", "skill", "clinic", "guide", "media", "access")
+OPTIONAL_SECTION_IDS = ("floorplan",)
 NAVIGATION_IDS = SECTION_IDS[1:-1]
 SCHEMA_VERSION = 5
 CATALOG_BYTE_BUDGET = 250_000
@@ -92,14 +93,15 @@ def validate_authored_content(authored: dict, project_root: Path, *, content_dir
     schema = _schema(project_root, content_dir)
     site, sections = authored["site"], authored["sections"]
     _validate_schema(site, schema, "site", "site")
-    if set(sections) != set(SECTION_IDS):
-        raise ValueError("The authored section registry must contain exactly the eleven existing section IDs")
-    if len(site["sectionOrder"]) != len(SECTION_IDS) or set(site["sectionOrder"]) != set(SECTION_IDS):
-        raise ValueError("site.sectionOrder must include each existing section exactly once")
+    present = set(sections)
+    if not set(SECTION_IDS) <= present or not present <= set(SECTION_IDS + OPTIONAL_SECTION_IDS):
+        raise ValueError("The authored section registry must preserve existing sections and only supported optional IDs")
+    if len(site["sectionOrder"]) != len(present) or set(site["sectionOrder"]) != present:
+        raise ValueError("site.sectionOrder must include each present section exactly once")
     navigation = site["navigation"]
     _unique_ids(navigation, "site.navigation")
-    if {row["id"] for row in navigation} != set(NAVIGATION_IDS):
-        raise ValueError("site.navigation must contain the nine existing menu sections")
+    if {row["id"] for row in navigation} != set(NAVIGATION_IDS) | (present & set(OPTIONAL_SECTION_IDS)):
+        raise ValueError("site.navigation must preserve existing menus and match optional sections")
     for section_id, section in sections.items():
         _validate_schema(section, schema, "section", f"sections.{section_id}")
         if section["id"] != section_id:
@@ -179,8 +181,16 @@ def _sprite_reference(reference: str, catalog: dict) -> dict:
 def validate_intro_catalog(catalog: dict, project_root: Path, *, content_dir: Path | None = None,
                            validate_assets: bool = True) -> None:
     _validate_schema(catalog, _schema(Path(project_root), content_dir), "catalog", "catalog")
-    if set(catalog["sections"]) != set(SECTION_IDS):
+    present = set(catalog["sections"])
+    if not set(SECTION_IDS) <= present or not present <= set(SECTION_IDS + OPTIONAL_SECTION_IDS):
         raise ValueError("Runtime catalog lost an existing section anchor")
+    order = catalog["site"]["sectionOrder"]
+    if len(order) != len(present) or set(order) != present:
+        raise ValueError("Runtime section order must match each present section exactly once")
+    navigation = catalog["site"]["navigation"]
+    _unique_ids(navigation, "runtime navigation")
+    if {row["id"] for row in navigation} != set(NAVIGATION_IDS) | (present & set(OPTIONAL_SECTION_IDS)):
+        raise ValueError("Runtime navigation must match existing and optional sections")
     for key in ("universe", "actors", "monsters", "heroMonsters", "features", "guild", "elements", "gallery", "sequence"):
         _unique_ids(catalog[key], key)
     for index, skill in enumerate(catalog["medical"]["skills"]):

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "approval": "user-requested reuse in owner PVP/intro projects; re-check rights before third-party redistribution",
+  "legalRightsProof": false,
+  "referenceCode": "Naksaeng orthographic PBR, foot anchoring, aperture traversal and physical laser contracts; no auth/finance or generated map copied",
+  "files": [
+    {
+      "path": "actors/300-idle.webp",
+      "sourceRepository": "is2js/naksaeng",
+      "sourcePath": "public/assets/showcase-characters/100/sheets/idle/normal.webp",
+      "sourceRelease": "lk-medical-3d-look-20261018-r3",
+      "bytes": 207706,
+      "sha256": "48c4edb9f6932ad3134e7814662d0d1501891381999aec63787e26e1622d348f",
+      "transform": "unchanged runtime sheet, explicit selection of idle/walk only"
+    },
+    {
+      "path": "actors/300-walk.webp",
+      "sourceRepository": "is2js/naksaeng",
+      "sourcePath": "public/assets/showcase-characters/100/sheets/walk/normal.webp",
+      "sourceRelease": "lk-medical-3d-look-20261018-r3",
+      "bytes": 470346,
+      "sha256": "fdaba89c39733a9efc0224e93f177637485e6b04c8d4126fcc9f54e03a75bc9a",
+      "transform": "unchanged runtime sheet, explicit selection of idle/walk only"
+    },
+    {
+      "path": "actors/400-idle.webp",
+      "sourceRepository": "is2js/naksaeng",
+      "sourcePath": "public/assets/showcase-characters/200/sheets/idle/normal.webp",
+      "sourceRelease": "lk-medical-3d-look-20261018-r3",
+      "bytes": 215390,
+      "sha256": "09f5a23e662fc0c9ddcc93d6ed852a1e747b5ffd0194cc31c5b5417967a97e3b",
+      "transform": "unchanged runtime sheet, explicit selection of idle/walk only"
+    },
+    {
+      "path": "actors/400-walk.webp",
+      "sourceRepository": "is2js/naksaeng",
+      "sourcePath": "public/assets/showcase-characters/200/sheets/walk/normal.webp",
+      "sourceRelease": "lk-medical-3d-look-20261018-r3",
+      "bytes": 470184,
+      "sha256": "894d5d23a533233c6f27c510cf717f3998d124743b539e1b7a8dea1b3d0171c8",
+      "transform": "unchanged runtime sheet, explicit selection of idle/walk only"
+    }
+  ]
+}

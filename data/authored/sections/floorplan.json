@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 5,
+  "id": "floorplan",
+  "heading": {
+    "number": "08",
+    "eyebrow": "WALK INTO THE SPACE",
+    "title": "한의원 공간 체험",
+    "description": "한 걸음씩 둘러보며 만나는, 우리만의 치유 공간."
+  },
+  "background": "",
+  "assets": {
+    "runtime": "/assets/rpg/ui/intro/floorplan/v2/playground.js",
+    "css": "/assets/rpg/ui/intro/floorplan/v2/playground.css",
+    "scene": "/assets/rpg/ui/intro/floorplan/v2/scene.json",
+    "poster": "/assets/rpg/ui/intro/floorplan/v2/poster.svg",
+    "bundleManifest": "/assets/rpg/ui/intro/floorplan/v2/bundle-manifest.json"
+  },
+  "copy": {
+    "posterAlt": "접수와 대기 공간, 두 진료실과 네 치료 베드가 연결된 가상 한의원 평면도 체험 미리보기",
+    "fictionalNote": "실제 의료기관과 무관한 약 14×10m 가상 공간 예시입니다.",
+    "startLabel": "공간 둘러보기",
+    "guide": "체험을 시작하면 캐릭터로 공간을 둘러볼 수 있어요. PC에서는 이동키와 마우스, 모바일에서는 조이스틱을 사용하세요. 실제 환자·진료 데이터와 연결되지 않습니다."
+  },
+  "actions": []
+}

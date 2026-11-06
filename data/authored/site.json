@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "revision": "intro-authored-sections-20261022-r1",
+  "revision": "intro-authored-sections-20261022-r1-floorplan-20261107",
   "sectionOrder": [
     "visual",
     "universe",
@@ -10,6 +10,7 @@
     "sect",
     "skill",
     "clinic",
+    "floorplan",
     "guide",
     "media",
     "access"
@@ -134,6 +135,17 @@
         {
           "name": "현황판 보기",
           "actionId": "staffBoard"
+        }
+      ]
+    },
+    {
+      "id": "floorplan",
+      "label": "공간 체험",
+      "kind": "links",
+      "entries": [
+        {
+          "name": "가상 한의원 둘러보기",
+          "target": "floorplan"
         }
       ]
     },

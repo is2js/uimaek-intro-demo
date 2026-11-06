@@ -1836,13 +1836,13 @@
 /* One content map feeds the desktop mega-menu and native mobile accordions. */
 .intro-header, .intro-drawer__panel { user-select: none; -webkit-user-select: none; }
 .intro [data-desktop-nav] { position: static; display: block; min-width: 0; height: 100%; gap: 0; }
-.intro-nav__top { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); align-items: stretch; width: 100%; height: 100%; }
+.intro-nav__top { display: grid; grid-template-columns: repeat(var(--intro-nav-count, 9), minmax(0, 1fr)); align-items: stretch; width: 100%; height: 100%; }
 .intro-nav__top > a { position: relative; display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 44px; padding: 0 2px; color: inherit; font-size: 14px; line-height: 1.4; white-space: nowrap; opacity: .88; transition: color .2s, opacity .2s; }
 .intro-nav__top > a::after { content: ""; position: absolute; bottom: 0; left: 12%; right: 12%; height: 2px; background: #d5ac67; transform: scaleX(0); transition: transform .2s; }
 .intro-nav__top > a:hover, .intro-nav__top > a.is-active { color: #e3bf81; opacity: 1; }
 .intro-nav__top > a:hover::after, .intro-nav__top > a.is-active::after { transform: scaleX(1); }
 .intro-nav-panel { position: absolute; top: 100%; left: 0; width: 100%; height: 336px; max-height: var(--nav-max-height, calc(100dvh - var(--intro-header-height) - 12px)); overflow-x: clip; overflow-y: auto; background: #07090cf0; color: #bdbbb5; border-top: 1px solid #ffffff10; border-bottom: 1px solid #c7ac6a26; box-shadow: 0 16px 30px #00000024; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-.intro-nav-panel__inner { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); align-items: start; width: var(--nav-width, 830px); max-width: 100%; min-height: 100%; margin-left: var(--nav-left, calc((100% - 830px) / 2)); }
+.intro-nav-panel__inner { display: grid; grid-template-columns: repeat(var(--intro-nav-count, 9), minmax(0, 1fr)); align-items: start; width: var(--nav-width, 830px); max-width: 100%; min-height: 100%; margin-left: var(--nav-left, calc((100% - 830px) / 2)); }
 .intro-nav-column { display: flex; flex-direction: column; min-width: 0; min-height: 100%; padding: 19px 5px 20px; text-align: center; transition: background .2s; }
 .intro-nav-column.is-active, .intro-nav-column:focus-within { background: #d5bc8410; }
 .intro-nav-column + .intro-nav-column { border-left: 1px solid #e4d6bb09; }
@@ -1957,3 +1957,21 @@
 .intro-footer nav > button[data-service-action] { padding: 0; color: inherit; background: transparent; font: inherit; }
 button.intro-guide-story { padding: 0; text-align: left; background: transparent; }
 body.intro.is-enhanced noscript { display: none !important; }
+
+/* Opt-in, isolated floorplan experience; all scene controls remain in its own root. */
+.intro-floorplan{padding-bottom:clamp(70px,7vw,120px);background:radial-gradient(ellipse at 50% 46%,#20443c66,transparent 64%),#101b28}
+.intro-floorplan-experience{width:min(1180px,calc(100% - 64px));margin:0 auto}
+.intro-floorplan-viewport{position:relative;isolation:isolate;min-height:540px;height:min(680px,72svh);border:1px solid #b5c2ad45;border-radius:18px;overflow:hidden;box-shadow:0 30px 85px #0005;background:#1d2c35}
+.intro-floorplan-stage{position:absolute;inset:0;outline:none}
+.intro-floorplan-stage>.floorplan-playground{height:100%;display:flex;flex-direction:column}
+.intro-floorplan-stage>.floorplan-playground>.fp-stage{height:auto;min-height:0;flex:1}
+.intro-floorplan-stage:focus-visible{outline:2px solid #d2b77e;outline-offset:-4px}
+.intro-floorplan-cover{position:absolute;inset:0;z-index:3;display:grid;align-items:end}
+.intro-floorplan-cover[hidden],.intro-floorplan-stage[hidden]{display:none}
+.intro-floorplan-cover>img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}
+.intro-floorplan-cover__copy{position:relative;padding:90px 24px 30px;text-align:center;background:linear-gradient(transparent,#101a29dc)}
+.intro-floorplan-cover__copy>p{margin:0 0 18px;font:500 14px/1.7 Y1000Ui,sans-serif;color:#d7e6df}
+.intro-floorplan-cover__copy .intro-button{min-height:48px;cursor:pointer}
+.intro-floorplan-cover__copy button:disabled{opacity:.65;cursor:wait}
+.intro-floorplan-note{margin:18px auto 0;max-width:870px;color:#b7c8c5;font:400 14px/1.8 Y1000Ui,sans-serif;text-align:center}
+@media(max-width:760px){.intro-floorplan-experience{width:calc(100% - 28px)}.intro-floorplan-viewport{min-height:520px;height:72svh;max-height:680px;border-radius:12px}.intro-floorplan-note{font-size:13px;text-align:left}.intro-floorplan-cover__copy{padding:80px 18px 24px}.intro-floorplan-cover>img{object-fit:contain;background:#1d2c35}}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "fictional-clinic-v1",
+  "files": [
+    {
+      "path": "actors/300-idle.webp",
+      "bytes": 207706,
+      "sha256": "48c4edb9f6932ad3134e7814662d0d1501891381999aec63787e26e1622d348f"
+    },
+    {
+      "path": "actors/300-walk.webp",
+      "bytes": 470346,
+      "sha256": "fdaba89c39733a9efc0224e93f177637485e6b04c8d4126fcc9f54e03a75bc9a"
+    },
+    {
+      "path": "actors/400-idle.webp",
+      "bytes": 215390,
+      "sha256": "09f5a23e662fc0c9ddcc93d6ed852a1e747b5ffd0194cc31c5b5417967a97e3b"
+    },
+    {
+      "path": "actors/400-walk.webp",
+      "bytes": 470184,
+      "sha256": "894d5d23a533233c6f27c510cf717f3998d124743b539e1b7a8dea1b3d0171c8"
+    },
+    {
+      "path": "asset-provenance.json",
+      "bytes": 2050,
+      "sha256": "4b9c6c503fc5388b36dcf4b5654c66afd28089f6de19544612958ad8d753e9db"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1524,
+      "sha256": "24571f35d3ace1ca422e4736ad1692370b4990664e834560712ad9e4071385b9"
+    },
+    {
+      "path": "playground.css",
+      "bytes": 5482,
+      "sha256": "ff81599874a95b5a8e77cdc35e8f42c2e7dc082b4fdfb6373fb403e37896e432"
+    },
+    {
+      "path": "playground.js",
+      "bytes": 559981,
+      "sha256": "c63ed7fd8379b54d97c5f077a192d433d68ab6f06502d081bcc498bb0e86355e"
+    },
+    {
+      "path": "poster.svg",
+      "bytes": 2071,
+      "sha256": "76c7fc7608fbb631fa20f8343ca96d2cc1d9b8a420ad8fe92b1d7f0be7bec32a"
+    },
+    {
+      "path": "scene.json",
+      "bytes": 7576,
+      "sha256": "2f13a48781d61554b0ae7fb3bebc7c26b7a94b97654f3513bca7a7c45f416714"
+    },
+    {
+      "path": "standalone.js",
+      "bytes": 4981,
+      "sha256": "006e1544db5fa7b8c25d66881c1a5e38ac176dfea3cf6a9e1f0276c48fe1ddf7"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 1098,
+      "sha256": "1699d9dc63aff5bacd6b4f411a5a4a5a552203770da5561a9e4d4212af4b747c"
+    }
+  ]
+}

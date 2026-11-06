@@ -1,5 +1,6 @@
 // Isolated promotional surface. Never import the game client or connect a socket.
 import { clamp01, sectionProgress, pinnedProgress, actorPanelTop, heroSequenceSnapshot, carouselOffset, createDragGesture, createReadyTransition, createSectionReplayGate } from './intro-motion.mjs?v=20261022-1';
+import { createFloorplanExperience } from './intro-floorplan.mjs?v=20261107-1';
 export const wrapIndex = (index, length) => length > 0 ? ((index % length) + length) % length : 0;
 
 export function heroCopyOpacity(scroll, height) {
@@ -177,6 +178,8 @@ export function mountIntro(root, data) {
   const spriteStates = new Map(), visibleSprites = new Set(), activeSections = new Set(), carousels = new Map();
   const encounters = new Map(), visibleEncounters = new Set();
   const heroSequences = new Map(), visibleHeroSequences = new Set();
+  const floorplanSection = $('#floorplan');
+  const floorplanExperience = createFloorplanExperience(floorplanSection, data.sections?.floorplan?.assets, { requestFrame: () => schedule() });
   const hero = $('[data-hero]'), parallaxLayers = $$('[data-parallax]');
   const leafCanvas = $('[data-leaf-canvas]');
   let leafContext = null;
@@ -283,6 +286,7 @@ export function mountIntro(root, data) {
   }
   function syncSuspension() {
     root.classList.toggle('is-motion-suspended', doc.hidden || !!dialog?.open || drawerOpen || !activeSections.has(hero));
+    floorplanExperience?.sync({ visible: activeSections.has(floorplanSection), hidden: doc.hidden, overlayOpen: !!dialog?.open || drawerOpen });
     syncElementVideo();
   }
   function syncHeroAccess() {
@@ -1276,6 +1280,8 @@ export function mountIntro(root, data) {
     }
     let animating = false;
     const overlayOpen = drawerOpen || !!dialog?.open;
+    floorplanExperience?.sync({ visible: activeSections.has(floorplanSection), hidden: doc.hidden, overlayOpen });
+    if (floorplanExperience?.frame(now)) animating = true;
     const heroActive = activeSections.has(hero) && !overlayOpen;
     if (reduced.matches || win.innerHeight <= 600) {
       openingDone = true; root.classList.remove('is-opening'); root.classList.add('has-opened');
@@ -1409,6 +1415,7 @@ export function mountIntro(root, data) {
   }
 
   on(root, 'click', event => {
+    if (event.target.closest?.('[data-floorplan-stage]')) return;
     if (handleDemoAction(event)) return;
     const featureCard = event.target.closest('.intro-features-card');
     if (featureCard) {
@@ -1500,6 +1507,7 @@ export function mountIntro(root, data) {
     if (drawerOpen && menu && !menu.contains(event.target)) menu.querySelector('[data-drawer-close]')?.focus({ preventScroll: true });
   });
   on(doc, 'keydown', event => {
+    if (event.target.closest?.('[data-floorplan-stage]')) return;
     navPointerType = 'keyboard';
     if (event.key === 'Escape' && navOpen) { event.preventDefault(); setNav(false, { restoreFocus: navPanel.contains(doc.activeElement) }); return; }
     const featureChoice = event.target.closest?.('[data-feature-select]');
@@ -1552,6 +1560,7 @@ export function mountIntro(root, data) {
   on(win, 'wheel', event => {
     const blocked = reduced.matches || doc.hidden || drawerOpen || !!dialog?.open
       || event.ctrlKey || event.target?.closest?.('input,textarea,select,video,[contenteditable="true"]')
+      || event.target?.closest?.('[data-floorplan-stage]')
       || [...carousels.values()].some(carousel => carousel.pointerId !== null);
     const center = win.innerHeight * .5;
     const section = [...activeSections].reduce((best, el) => {
@@ -1586,6 +1595,7 @@ export function mountIntro(root, data) {
   schedule();
   const cleanup = () => {
     if (dead) return; setNav(false); cancelDrags(); themeSelection.stop(); modalGeneration++; cancelPhotoAnimations();
+    floorplanExperience?.destroy();
     carousels.forEach(carousel => carousel.selection.stop());
     heroSequences.forEach(state => state.controller.stop()); heroSequences.clear(); visibleHeroSequences.clear();
     dead = true; actorSelection.stop(); finishActorTransition(); encounters.forEach(encounter => encounter.controller.stop()); encounters.clear(); visibleEncounters.clear(); abort.abort(); win.cancelAnimationFrame(raf); win.clearTimeout(noticeTimer);
@@ -1604,7 +1614,7 @@ export function mountIntro(root, data) {
     spriteStates.clear(); visibleSprites.clear(); activeSections.clear(); root.__introCleanup = null;
   };
   root.__introCleanup = cleanup;
-  on(win, 'pagehide', event => { setNav(false); if (event.persisted) { suspendModalVideos(); $('[data-element-video]')?.pause(); cancelDrags(); photoAnimations.forEach(animation => animation.pause()); finishActorTransition(); win.cancelAnimationFrame(raf); raf = 0; previousTick = null; audio?.pause(); } else cleanup(); });
+  on(win, 'pagehide', event => { setNav(false); floorplanExperience?.sync({ hidden: true }); if (event.persisted) { suspendModalVideos(); $('[data-element-video]')?.pause(); cancelDrags(); photoAnimations.forEach(animation => animation.pause()); finishActorTransition(); win.cancelAnimationFrame(raf); raf = 0; previousTick = null; audio?.pause(); } else cleanup(); });
   on(win, 'pageshow', event => { if (event.persisted) { photoAnimations.forEach(animation => animation.play()); dirty = true; syncSuspension(); syncAudio(); resumeModalVideos(); schedule(); } });
   return cleanup;
 }

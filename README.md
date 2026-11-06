@@ -252,3 +252,12 @@ PVP 체크아웃에서:
 PVP 원본에서 처음 배포용으로 내보낼 때는 `tools/export_rpg_intro_demo.py --output ../uimaek-intro-demo --pages`를 사용합니다. 선택은 `.intro-export.json`의 `pagesEnabled`에 저장되며 이후 일반 내보내기에서도 workflow와 README 상태를 유지합니다. 새 대상에 일반 내보내기만 실행하면 배포 workflow를 만들지 않습니다. 내보내기 자체가 GitHub 설정을 바꾸거나 push하지는 않습니다.
 
 공개 저장소의 Settings → Pages에서 Source를 **GitHub Actions**로 설정한 경우에 배포됩니다. 새로 복사한 프로젝트는 저장소 설정과 workflow를 확인한 뒤 배포하세요. main에 push하면 현재 공개 사이트가 갱신되므로 작업 브랜치에서 먼저 로컬 검증하고 병합합니다. 실패 시 사이트는 이전 정상 배포를 유지하며, 이전 정상 커밋을 새 커밋으로 복원해 다시 배포할 수 있습니다. API 키나 비공개 데이터를 JSON·자산에 넣지 않습니다.
+
+
+## 평면도 실내 체험 섹션
+
+`floorplan`은 기존 진료 섹션 다음의 선택적 가상 한의원 체험입니다. 실제 진료 시스템에 연결되지 않습니다. 시작 버튼을 누른 뒤에만 3D 자산을 읽으며 모바일 조이스틱과 의료진 변경을 지원합니다.
+
+실행 입력은 `data/content.json`의 `sections.floorplan`과 `site.sectionOrder/navigation`입니다. `data/authored`는 작성 스냅샷입니다. 새 평면은 `assets/rpg/ui/intro/floorplan/v2/scene.json`의 미터 계약으로 교체하고 독립 floorplan-playground 스킬의 validate/build를 실행하여 bundle-manifest를 다시 생성해야 합니다. 출력 파일만 수동 수정해 해시를 임의 승인하지 마세요.
+
+자산·JS·CSS 경로는 빌드의 base path를 지원합니다. 탐색 프로필에서는 편집·실측·전투 UI가 노출되지 않습니다. 스킬 소스는 원본 PVP의 `.agents/skills/floorplan-*`이며 개인 스킬로 동기화하면 다른 세션에서 재사용할 수 있습니다.

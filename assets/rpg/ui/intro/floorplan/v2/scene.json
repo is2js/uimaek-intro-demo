@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "floorplan-scene-v1", "id": "fictional-clinic-v1", "title": "온유 한의원 · 가상 공간", "description": "실제 건물·환자·진료 시스템과 무관한 14×10m 공간 예시입니다.",
+  "provenance": {"kind":"fictional","reference":"authored metric demonstration, not a measured real property","dimensions":"14 × 10m authored"},
+  "bounds": [14,10], "cellSizeMeters": 0.25, "wallHeightMeters": 2.7, "spawn": [13,5], "northAngleDeg": 0, "transform":{"rotationDeg":0,"mirrorX":false},
+  "cutawayWallIds": ["south","east"],
+  "rooms": [
+    {"id":"reception-room","label":"접수 · 대기","polygon":[[0,0],[4,0],[4,4],[0,4]],"center":[2,2],"floorMaterial":"wood"},
+    {"id":"consult-room-1","label":"진료실 1","polygon":[[4,0],[7.5,0],[7.5,4],[4,4]],"center":[5.75,2],"floorMaterial":"wood"},
+    {"id":"consult-room-2","label":"진료실 2","polygon":[[7.5,0],[11,0],[11,4],[7.5,4]],"center":[9.25,2],"floorMaterial":"wood"},
+    {"id":"prep-room","label":"준비 · 수납","polygon":[[11,0],[14,0],[14,4],[11,4]],"center":[12.5,2],"floorMaterial":"tile"},
+    {"id":"corridor-room","label":"연결 복도","polygon":[[0,4],[14,4],[14,6],[0,6]],"center":[7,5],"floorMaterial":"wood"},
+    {"id":"treatment-room","label":"치료실","polygon":[[0,6],[10.5,6],[10.5,10],[0,10]],"center":[5,6.8],"floorMaterial":"wood"},
+    {"id":"bath-room","label":"화장실","polygon":[[10.5,6],[14,6],[14,10],[10.5,10]],"center":[12,7],"floorMaterial":"tile"}
+  ],
+  "walls": [
+    {"id":"north","start":[0,0],"end":[14,0],"thickness":0.18},
+    {"id":"east","start":[14,0],"end":[14,10],"thickness":0.18},
+    {"id":"south","start":[14,10],"end":[0,10],"thickness":0.18},
+    {"id":"west","start":[0,10],"end":[0,0],"thickness":0.18},
+    {"id":"north-corridor","start":[0,4],"end":[14,4],"thickness":0.12},
+    {"id":"south-corridor","start":[0,6],"end":[14,6],"thickness":0.12},
+    {"id":"consult-divider-1","start":[4,0],"end":[4,4],"thickness":0.12},
+    {"id":"consult-divider-2","start":[7.5,0],"end":[7.5,4],"thickness":0.12},
+    {"id":"prep-divider","start":[11,0],"end":[11,4],"thickness":0.12},
+    {"id":"bath-divider","start":[10.5,6],"end":[10.5,10],"thickness":0.12}
+  ],
+  "openings": [
+    {"id":"entry-door","wallId":"east","start":[14,4.35],"end":[14,5.65],"kind":"door","height":2.2},
+    {"id":"reception-door","wallId":"north-corridor","start":[2.5,4],"end":[3.55,4],"kind":"passage","height":2.2},
+    {"id":"consult-door-1","wallId":"north-corridor","start":[5.5,4],"end":[6.5,4],"kind":"door","height":2.15},
+    {"id":"consult-door-2","wallId":"north-corridor","start":[9,4],"end":[10,4],"kind":"door","height":2.15},
+    {"id":"prep-door","wallId":"north-corridor","start":[12.3,4],"end":[13.3,4],"kind":"door","height":2.15},
+    {"id":"treatment-door","wallId":"south-corridor","start":[6.5,6],"end":[7.7,6],"kind":"passage","height":2.2},
+    {"id":"bath-door","wallId":"south-corridor","start":[11.6,6],"end":[12.6,6],"kind":"door","height":2.15},
+    {"id":"window-reception","wallId":"north","start":[0.6,0],"end":[3.4,0],"kind":"window","sillHeight":0.85,"height":1.4},
+    {"id":"window-consult-1","wallId":"north","start":[4.6,0],"end":[6.9,0],"kind":"window","sillHeight":0.85,"height":1.4},
+    {"id":"window-consult-2","wallId":"north","start":[8.1,0],"end":[10.4,0],"kind":"window","sillHeight":0.85,"height":1.4},
+    {"id":"window-treatment","wallId":"west","start":[0,7],"end":[0,9.1],"kind":"window","sillHeight":0.85,"height":1.4}
+  ],
+  "fixtures": [
+    {"id":"reception-desk","assetId":"reception","position":[1.7,1.3],"size":[2.1,0.8,1.05],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"waiting-sofa","assetId":"sofa","position":[0.65,2.8],"size":[0.8,1.8,0.85],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"reception-plant","assetId":"plant","position":[3.45,0.6],"size":[0.5,0.5,1.1],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"consult-desk-1","assetId":"desk","position":[5.75,1.6],"size":[1.5,0.7,0.75],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"consult-chair-1","assetId":"chair","position":[5.75,0.8],"size":[0.52,0.52,0.9],"yawDeg":180,"kind":"base","fixed":true},
+    {"id":"visitor-chair-1","assetId":"chair","position":[5.6,2.4],"size":[0.5,0.5,0.85],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"consult-desk-2","assetId":"desk","position":[9.25,1.6],"size":[1.5,0.7,0.75],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"consult-chair-2","assetId":"chair","position":[9.25,0.8],"size":[0.52,0.52,0.9],"yawDeg":180,"kind":"base","fixed":true},
+    {"id":"visitor-chair-2","assetId":"chair","position":[9.1,2.4],"size":[0.5,0.5,0.85],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"prep-cabinet","assetId":"cabinet","position":[12.5,0.5],"size":[2.5,0.6,2.2],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"prep-sink","assetId":"sink","position":[13.3,2],"size":[0.7,1.1,0.9],"yawDeg":90,"kind":"base","fixed":true},
+    {"id":"treatment-bed-1","assetId":"treatment-bed","position":[1.5,8.25],"size":[1.0,2.0,0.72],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"treatment-bed-2","assetId":"treatment-bed","position":[4,8.25],"size":[1.0,2.0,0.72],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"treatment-bed-3","assetId":"treatment-bed","position":[6.5,8.25],"size":[1.0,2.0,0.72],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"treatment-bed-4","assetId":"treatment-bed","position":[9,8.25],"size":[1.0,2.0,0.72],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"bath-toilet","assetId":"toilet","position":[13.2,8.9],"size":[0.65,0.85,0.8],"yawDeg":180,"kind":"base","fixed":true},
+    {"id":"bath-sink","assetId":"sink","position":[11.2,8.9],"size":[0.65,0.55,0.9],"yawDeg":0,"kind":"base","fixed":true},
+    {"id":"ceiling-ac","assetId":"aircon","position":[7,5],"size":[0.8,0.8,0.22],"yawDeg":0,"mountHeightMeters":2.45,"collisionMode":"visual-only","measurementObstacle":false,"kind":"base","fixed":true}
+  ],
+  "options": [
+    {"id":"mint-bed-upgrade","label":"민트 치료 베드","replacesFixtureIds":["treatment-bed-1"],"fixtures":[{"id":"mint-treatment-bed","assetId":"treatment-bed","position":[1.5,8.25],"size":[1,2,0.72],"yawDeg":0,"color":"#78aaa0","kind":"option","fixed":true}]},
+    {"id":"storage-upgrade","label":"준비실 수납 업그레이드","fixtures":[{"id":"prep-extra-cabinet","assetId":"cabinet","position":[11.5,2.3],"size":[1.5,0.6,1.1],"yawDeg":90,"kind":"option","fixed":true}]}
+  ],
+  "furnitureCatalog": [
+    {"id":"guest-chair","label":"의자","assetId":"chair","size":[0.5,0.5,0.85]},
+    {"id":"storage-unit","label":"수납장","assetId":"cabinet","size":[1.1,0.45,1.1]},
+    {"id":"green-plant","label":"화분","assetId":"plant","size":[0.5,0.5,1.1]}
+  ],
+  "actors": [
+    {"id":"300","label":"남성 의료진","heightMeters":1.65,"motions":{"idle":{"url":"actors/300-idle.webp","cellWidth":256,"cellHeight":256,"frames":3,"directions":["n","ne","e","se","s","sw","w","nw"],"frameMs":300,"anchor":[128,239]},"walk":{"url":"actors/300-walk.webp","cellWidth":256,"cellHeight":256,"frames":6,"directions":["n","ne","e","se","s","sw","w","nw"],"frameMs":70,"anchor":[128,239]}}},
+    {"id":"400","label":"여성 의료진","heightMeters":1.65,"motions":{"idle":{"url":"actors/400-idle.webp","cellWidth":256,"cellHeight":256,"frames":3,"directions":["n","ne","e","se","s","sw","w","nw"],"frameMs":300,"anchor":[128,239]},"walk":{"url":"actors/400-walk.webp","cellWidth":256,"cellHeight":256,"frames":6,"directions":["n","ne","e","se","s","sw","w","nw"],"frameMs":70,"anchor":[128,239]}}}
+  ]
+}

@@ -105,6 +105,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -172,6 +173,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -201,6 +203,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media"
           ]
@@ -326,13 +329,14 @@
               "sect",
               "skill",
               "clinic",
+              "floorplan",
               "guide",
               "media",
               "access"
             ]
           },
           "minItems": 11,
-          "maxItems": 11
+          "maxItems": 12
         },
         "metadata": {
           "type": "object",
@@ -381,7 +385,7 @@
             "$ref": "#/$defs/navigationGroup"
           },
           "minItems": 9,
-          "maxItems": 9
+          "maxItems": 10
         },
         "serviceBar": {
           "type": "object",
@@ -577,6 +581,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -669,6 +674,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -998,6 +1004,15 @@
               }
             },
             "required": []
+          }
+        },
+        {
+          "if": { "properties": { "id": { "const": "floorplan" } } },
+          "then": {
+            "properties": {
+              "assets": { "required": ["runtime", "css", "scene", "poster", "bundleManifest"] },
+              "copy": { "required": ["posterAlt", "fictionalNote", "startLabel", "guide"] }
+            }
           }
         }
       ]
@@ -1469,6 +1484,9 @@
             "clinic": {
               "$ref": "#/$defs/runtimeSection"
             },
+            "floorplan": {
+              "$ref": "#/$defs/runtimeSection"
+            },
             "guide": {
               "$ref": "#/$defs/runtimeSection"
             },
@@ -1488,6 +1506,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -1801,6 +1820,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -1868,6 +1888,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -1897,6 +1918,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media"
           ]
@@ -2090,6 +2112,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -2181,6 +2204,7 @@
             "sect",
             "skill",
             "clinic",
+            "floorplan",
             "guide",
             "media",
             "access"
@@ -2511,6 +2535,15 @@
             },
             "required": []
           }
+        },
+        {
+          "if": { "properties": { "id": { "const": "floorplan" } } },
+          "then": {
+            "properties": {
+              "assets": { "required": ["runtime", "css", "scene", "poster", "bundleManifest"] },
+              "copy": { "required": ["posterAlt", "fictionalNote", "startLabel", "guide"] }
+            }
+          }
         }
       ]
     },
@@ -2536,13 +2569,14 @@
               "sect",
               "skill",
               "clinic",
+              "floorplan",
               "guide",
               "media",
               "access"
             ]
           },
           "minItems": 11,
-          "maxItems": 11
+          "maxItems": 12
         },
         "metadata": {
           "type": "object",
@@ -2591,7 +2625,7 @@
             "$ref": "#/$defs/runtimeNavigationGroup"
           },
           "minItems": 9,
-          "maxItems": 9
+          "maxItems": 10
         },
         "serviceBar": {
           "type": "object",

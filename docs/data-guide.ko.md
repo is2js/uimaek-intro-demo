@@ -186,3 +186,12 @@ templates/rpg-intro.html / src/rpg/intro.mjs
 정적 데모의 빌드 후 URL은 상대 경로나 Pages 하위 경로일 수 있으므로 런타임 스키마는 이를 허용합니다. 작성용 JSON은 프로젝트의 실제 `/assets/` 경로만 사용합니다. export 시 선택된 프레임 행을 원본 RGBA 그대로 추출했다면 `rows: 1`, `row: 0`으로 투영하고, 원본 메타·해시·추출 작업은 export manifest에 남깁니다. 출처 필드는 export manifest로 옮길 수 있으며 런타임에서 `sourceManifest` 자체는 필수가 아닙니다. 게임 저장소의 원본 프레임·타이밍은 바꾸지 않습니다.
 
 정적 데모를 배포할 때는 작성 JSON·schema·템플릿·JS/CSS·선택 자산과 원본 기준 commit/hash를 함께 추적합니다. 데모가 서버 API나 실제 인증·진료 데이터에 의존하지 않도록 서비스 액션을 데모 메시지로 연결하고, 큰 영상·스프라이트의 전체 선로딩을 피합니다.
+
+
+## 평면도 실내 체험 섹션
+
+`floorplan`은 기존 진료 섹션 다음의 선택적 가상 한의원 체험입니다. 실제 진료 시스템에 연결되지 않습니다. 시작 버튼을 누른 뒤에만 3D 자산을 읽으며 모바일 조이스틱과 의료진 변경을 지원합니다.
+
+실행 입력은 `data/content.json`의 `sections.floorplan`과 `site.sectionOrder/navigation`입니다. `data/authored`는 작성 스냅샷입니다. 새 평면은 `assets/rpg/ui/intro/floorplan/v2/scene.json`의 미터 계약으로 교체하고 독립 floorplan-playground 스킬의 validate/build를 실행하여 bundle-manifest를 다시 생성해야 합니다. 출력 파일만 수동 수정해 해시를 임의 승인하지 마세요.
+
+자산·JS·CSS 경로는 빌드의 base path를 지원합니다. 탐색 프로필에서는 편집·실측·전투 UI가 노출되지 않습니다. 스킬 소스는 원본 PVP의 `.agents/skills/floorplan-*`이며 개인 스킬로 동기화하면 다른 세션에서 재사용할 수 있습니다.

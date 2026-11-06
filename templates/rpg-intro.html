@@ -11,7 +11,7 @@
   {{ label or action.label }}{% if arrow %} <b aria-hidden="true">↗</b>{% endif %}
   {% if demo %}</button>{% elif action.method == 'POST' %}</button></form>{% else %}</a>{% endif %}
 {%- endmacro %}
-{% macro section_heading(id) -%}{% set h = sections[id].heading %}{{ heading(h.number, h.eyebrow, h.title, h.description) }}{%- endmacro %}
+{% macro section_heading(id) -%}{% set h = sections[id].heading %}{% set number = '%02d' | format(site.sectionOrder.index(id)) if sections.floorplan is defined else h.number %}{{ heading(number, h.eyebrow, h.title, h.description) }}{%- endmacro %}
 {% macro nav_links(group) -%}
   {% if group.kind != 'links' %}<a class="intro-nav-overview" href="#{{ group.id }}">{{ site['copy'].navOverview }} <span aria-hidden="true">↗</span></a>{% endif %}
   {% for entry in group.entries %}
@@ -56,9 +56,9 @@
     <title>{{ site.metadata.title }}{{ " · DEMO" if demo else "" }}</title>
     <link rel="stylesheet" href="/assets/rpg/fonts/web/fonts.css">
     <link rel="stylesheet" href="/assets/rpg/ui/intro/v4-refinement/fonts/fonts.css">
-    <link rel="stylesheet" href="/assets/rpg/css/rpg-intro.css?v=20261022-4">
+    <link rel="stylesheet" href="/assets/rpg/css/rpg-intro.css?v=20261107-1">
     <noscript><style>.intro-sprite{display:none!important}</style></noscript>
-    <script type="module" src="/src/rpg/intro.mjs?v=20261022-4"></script>
+    <script type="module" src="/src/rpg/intro.mjs?v=20261107-1"></script>
   </head>
   <body class="intro" data-rpg-intro data-deployment="{{ deployment.mode }}" data-theme="{{ site.theme.default }}">
     <a class="intro-skip" href="#universe">본문으로 건너뛰기</a>
@@ -67,7 +67,7 @@
       <div class="intro-header__inner">
         <button class="intro-menu-button" type="button" data-action="menu" aria-label="메뉴 열기" aria-expanded="false" aria-controls="intro-menu"><span></span><span></span><span></span></button>
         <a class="intro-brand" href="#visual" aria-label="의맥전기 처음으로">{{ brand() }}</a>
-        <nav class="intro-nav" data-desktop-nav aria-label="주요 메뉴">
+        <nav class="intro-nav" data-desktop-nav aria-label="주요 메뉴" style="--intro-nav-count:{{ nav_groups | length }}">
           <div class="intro-nav__top" data-nav-top>{% for group in nav_groups %}<a href="#{{ group.id }}" data-nav-trigger="{{ group.id }}" aria-controls="intro-nav-panel" aria-expanded="false">{{ group.label }}</a>{% endfor %}</div>
           <div class="intro-nav-panel" id="intro-nav-panel" data-nav-panel hidden inert>
             <div class="intro-nav-panel__inner">{% for group in nav_groups %}<div class="intro-nav-column" data-nav-column="{{ group.id }}" aria-label="{{ group.label }} 하위 메뉴">{{ nav_links(group) }}</div>{% endfor %}</div>
@@ -261,6 +261,22 @@
           <p class="intro-clinic-note">{{ sections.clinic['copy'].note }}<br>{{ sections.clinic['copy'].expandNote }}</p>
         </div>
       </section>
+      {% if sections.floorplan is defined %}
+      <section class="intro-section intro-floorplan" id="floorplan" data-section data-floorplan-state="poster" aria-label="{{ sections.floorplan.heading.title }}">
+        {{ section_heading("floorplan") }}
+        <div class="intro-floorplan-experience" data-reveal>
+          <div class="intro-floorplan-viewport">
+            <div class="intro-floorplan-stage" data-floorplan-stage tabindex="0" aria-label="가상 한의원 공간 탐색" hidden></div>
+            <div class="intro-floorplan-cover" data-floorplan-cover>
+              <img src="{{ sections.floorplan.assets.poster }}" alt="{{ sections.floorplan['copy'].posterAlt }}" width="1400" height="900" loading="lazy" decoding="async" draggable="false">
+              <div class="intro-floorplan-cover__copy"><p>{{ sections.floorplan['copy'].fictionalNote }}</p><button type="button" class="intro-button" data-floorplan-start>{{ sections.floorplan['copy'].startLabel }} <b aria-hidden="true">↗</b></button></div>
+            </div>
+          </div>
+          <p class="intro-floorplan-note" data-floorplan-status role="status" aria-live="polite">{{ sections.floorplan['copy'].guide }}</p>
+          <noscript><p class="intro-floorplan-note">가상 공간 미리보기입니다. 직접 탐색하려면 JavaScript를 활성화해 주세요.</p></noscript>
+        </div>
+      </section>
+      {% endif %}
       <section class="intro-section intro-guide intro-illustrated" id="guide" data-section>
         {{ scenery('guide', sections.guide.background) }}
         {{ section_heading("guide") }}
